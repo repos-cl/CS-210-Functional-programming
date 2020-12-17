@@ -9,24 +9,12 @@ workflow:
     - if: $CI_COMMIT_MESSAGE !~ /\[no-ci\]/
 
 stages:
-  - next-question
   - build
   - grade
 
-next-question:
-  stage: next-question
-  image: lampepfl/moocs:cs210-2020-dryrun
-  tags:
-    - cs210
-  except:
-    - tags
-    - master
-  script:
-    - /next-exercise
-
 compile:
   stage: build
-  image: lampepfl/dotty:2020-09-08
+  image: gitlab.epfl.ch/lamp/dependency_proxy/containers/lampepfl/dotty:2020-09-08
   tags:
     - cs210
   except:
@@ -60,9 +48,7 @@ grade:
   tags:
     - cs210
   image:
-    # If we push a new image with the same name, we may have to clear the image
-    # caches on the runner machines
-    name: lampepfl/moocs:cs210-2020-${CI_COMMIT_BRANCH}
+    name: gitlab.epfl.ch/lamp/dependency_proxy/containers/lampepfl/moocs:cs210-2020-${CI_COMMIT_BRANCH}
     entrypoint: [""]
   allow_failure: true
   before_script:
