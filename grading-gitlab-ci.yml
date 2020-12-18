@@ -14,7 +14,7 @@ stages:
 
 compile:
   stage: build
-  image: gitlab.epfl.ch/lamp/dependency_proxy/containers/lampepfl/dotty:2020-09-08
+  image: lampepfl/dotty:2020-09-08
   tags:
     - cs210
   except:
@@ -48,7 +48,7 @@ grade:
   tags:
     - cs210
   image:
-    name: gitlab.epfl.ch/lamp/dependency_proxy/containers/lampepfl/moocs:cs210-2020-${CI_COMMIT_BRANCH}
+    name: lampepfl/moocs:cs210-2020-${CI_COMMIT_BRANCH}
     entrypoint: [""]
   allow_failure: true
   before_script:
