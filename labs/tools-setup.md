@@ -1,5 +1,7 @@
 # Tools Setup
 
+The setup is the same as for the Functional Programming (CS-210) class given last semester, but it differs from the one given in previous years.
+
 ## Note
 
 We recommend using Linux or macOS for this course, we also support Windows but
