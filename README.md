@@ -11,7 +11,7 @@ We will use GitLab's issue tracker as a discussion forum. Feel free to [open an 
 
 1. [Join the Discord](https://discord.gg/8ud6UpE)
 2. Log into gitlab: https://gitlab.epfl.ch/users/sign_in
-3. [Register your Gaspard](https://docs.google.com/spreadsheets/d/12KvfD_jN5AcApmWhCz7xZmln48fctQOa984RPWrqRkY/edit#gid=0) to obtain a GitLab repo for the labs (login with your `@epfl.ch` address to have write access).
+3. [Register your Gaspar](https://docs.google.com/spreadsheets/d/12KvfD_jN5AcApmWhCz7xZmln48fctQOa984RPWrqRkY/edit#gid=0) to obtain a GitLab repo for the labs (login with your `@epfl.ch` address to have write access).
 4. Follow the [Tools Setup](labs/tools-setup.md) page.
 5. Do the [example lab](labs/example-lab.md).
 6. Do the [first graded lab](labs/lab-1.md).
