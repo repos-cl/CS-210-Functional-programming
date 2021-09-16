@@ -13,7 +13,7 @@ sure to replace `GASPAR` with your EPFL username (the one with letters, not the
 one with number) in the following command).
 
 ```shell
-git clone -b example git@gitlab.epfl.ch:lamp/students-repositories-fall-2020/cs210-GASPAR.git cs210-example
+git clone -b example git@gitlab.epfl.ch:lamp/students-repositories-fall-2021/cs210-GASPAR.git cs210-example
 ```
 
 **If this command fails, make sure you've [logged into
@@ -81,6 +81,14 @@ This tells us several things:
 Time to go fix that bug! The next section will show you how to do that using the IDE.
 
 ## Part 3: Using the IDE
+
+### Setup
+
+Let's upgrade the IDE support first, close VSCode if it's open and run:
+
+```shell
+code --force --install-extension scalameta.metals
+```
 
 ### Startup
 
@@ -217,8 +225,7 @@ scala> max(List(1,3,2))
 res1: Int = 3
 ```
 
-You can enter a multiline expression in the REPL by using `Alt+Enter`
-(`Option+Enter` on macOS) instead of `Enter`:
+You can enter a multiline expression in the REPL by using `Alt+Enter` instead of `Enter`:
 
 ```scala
 scala> if 1 == 1 then
@@ -227,6 +234,10 @@ scala> if 1 == 1 then
      |   "b"
 val res0: String = a
 ```
+
+(on macOS, first go to `Terminal -> Preference -> Profiles -> Keyboard` and then
+select `Use Option as Meta key`, then `Option+Enter` will work for multiline
+expressions.)
 
 In order to exit the Scala REPL and go back to sbt, type `Ctrl+D`.
 
@@ -249,6 +260,19 @@ will be shown in green on the right.
 
 # Troubleshooting
 
+## sbt fails to start
+
+If you see any kind of error when sbt starts that prevents you from using it,
+try cleaning the project cache by running:
+```shell
+git clean -Xdf
+```
+Then restarting `sbt`, if this still doesn't work, try deleting the global sbt
+cache:
+```shell
+rm -r ~/.sbt
+```
+
 ## IDE features like type-on-hover or go-to-definition do not work
 
 It's likely that the build wasn't imported, we can import it manually:
@@ -265,16 +289,6 @@ If things still don't work, try restarting Code (launch it in the same way you
 started it before, using `code .` from the project directory). If you're still
 having issues, try clicking on "Clean compile workspace" from the same
 sidebar.
-
-## Syntax errors for valid code in the IDE
-
-When first opening a file you might see some syntax errors for valid code:
-
-![](images/syntax-error-bug.png)
-
-This is a known bug and can be ignored, as soon as you start typing in this
-file, these errors should go away (if they don't, try the import build
-instructions above).
 
 ## Warning about Bloop installed version
 

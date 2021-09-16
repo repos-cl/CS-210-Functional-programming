@@ -1,7 +1,5 @@
 # Tools Setup
 
-The setup is the same as for the Functional Programming (CS-210) class given last semester, but it differs from the one given in previous years.
-
 ## Note
 
 We recommend using Linux or macOS for this course, we also support Windows but
@@ -12,13 +10,10 @@ ourselves.
 **On Windows, if your username has spaces or special characters in it, the IDE might not
 work properly. Please create a new user with a username containing only letters.**
 
-# Step 1: Create an account on gitlab.epfl.ch, register in a group
+# Step 1: Create an account on gitlab.epfl.ch
 
 If you haven't already [log into gitlab](https://gitlab.epfl.ch/users/sign_in)
-and [register in a
-group](https://gitlab.epfl.ch/lamp/cs210/-/blob/master/exercises/Group%20workspaces.md),
-do this as soon as possible because it will take some time between the account
-creation and the lab submission system working for your account.
+and fill in [this table](https://docs.google.com/spreadsheets/d/12KvfD_jN5AcApmWhCz7xZmln48fctQOa984RPWrqRkY/edit#gid=0) with your GASPAR and SCIPER number to initialize your GitLab repository for the course. Do this as soon as possible because it will take some time between the account creation and the lab submission system working for your account.
 
 ## Step 2: Installing the Java Development Kit (JDK) and sbt via coursier
 
@@ -37,11 +32,13 @@ chmod +x cs
 ./cs setup -y --jvm 8 --apps cs,sbt
 ```
 
+Please reboot after this point.
+
 ### On macOS
 
 First, install the Homebrew package manager:
 ```shell
-/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)"
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 ```
 Use Homebrew to install coursier:
 ```scala
@@ -53,6 +50,8 @@ brew install coursier/formulas/coursier
 ```shell
 cs setup -y --jvm 8 --apps sbt
 ```
+
+Please close this terminal and open a new one after this point.
 
 ### On Windows
 
@@ -98,22 +97,16 @@ step):
 **In case of errors please ask on Discord or Gitlab issues for help, but don't
 try to run commands as Administrator as this will likely cause further issues!**
 
+Please close this terminal and open a new one after this point.
+
 ## Step 5: Installing git
 
 git is a version control system.
 
-### On Linux
-
-#### On Ubuntu and Debian
+### On Ubuntu and Debian
 
 ```shell
 sudo apt update && sudo apt install git
-```
-
-### On Fedora
-
-```shell
-sudo dnf install git
 ```
 
 ### On macOS
@@ -144,7 +137,7 @@ See [https://code.visualstudio.com/docs/setup/linux](https://code.visualstudio.c
 ### On macOS
 
 ```shell
-brew cask install visual-studio-code
+brew install --cask visual-studio-code
 ```
 
 ### On Windows
@@ -169,25 +162,17 @@ To submit labs, you will need an SSH key. If you don't already have one, here's 
 
 ### Step 8.1: Installing OpenSSH
 
-### On Linux
-
 #### On Ubuntu and Debian
 
 ```shell
-sudo apt install openssh-client
+sudo apt update && sudo apt install openssh-client
 ```
 
-#### On Fedora
-
-```shell
-sudo dnf install openssh
-```
-
-#### macOS
+#### On macOS
 
 Nothing to do, OpenSSH is pre-installed
 
-#### Windows
+#### On Windows
 
 Follow the instructions under "Enable OpenSSH Client in Windows 10" on
 [https://winaero.com/blog/enable-openssh-client-windows-10/](https://winaero.com/blog/enable-openssh-client-windows-10/)
