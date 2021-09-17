@@ -55,7 +55,9 @@ Please close this terminal and open a new one after this point.
 
 ### On Windows
 
-Download and install the [Visual C++ 2010 SP1 Redistributable Package](https://www.microsoft.com/en-us/download/details.aspx?id=13523).
+Download and install the [Visual C++ 2010 SP1 Redistributable
+Package](https://www.microsoft.com/en-us/download/details.aspx?id=26999) (click
+on "Download" then select "vcredist_x64.exe" and click "Next").
 
 Open `cmd.exe` (and not powershell)
 
@@ -191,7 +193,7 @@ The command will then ask for a location, which you can leave as the default. It
 
 To be able to push your code, you'll need to add the public part of your key on Gitlab:
 - Go to [gitlab.epfl.ch](https://gitlab.epfl.ch), log in with your EPFL account
-- Go to [gitlab.epfl.ch/profile/keys](https://gitlab.epfl.ch/profile/keys) and copy-paste the content of the `id_rsa.pub` file created by the `ssh-keygen` command you just ran (when the command was ran it printed the location where this file was saved).
+- Go to [gitlab.epfl.ch/-/profile/keys](https://gitlab.epfl.ch/-/profile/keys) and copy-paste the content of the `id_rsa.pub` file created by the `ssh-keygen` command you just ran (when the command was ran it printed the location where this file was saved).
 - Press `Add key`
 
 ## Step 9: Follow the example lab
