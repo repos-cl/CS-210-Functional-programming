@@ -103,7 +103,9 @@ Exercises should be done in groups and submitted via Google Drive, see details i
 
 ## Exam Schedule
 
-The final exam date will be during the exam session in January 2021. The final exam will cover all material seen during the semester.
+The midterm exam will be on 10.11.2021.
+
+The final exam will be on 22.12.2021.
 
 Information about exam organization will be communicated by email a few days before the exam.
 
