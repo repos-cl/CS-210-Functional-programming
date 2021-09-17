@@ -82,24 +82,24 @@ Labs are submitted by pushing your code on GitLab, see details in the [grading a
 
 ## Exercise Schedule
 
-| Title                                          | Handout Released | Session (Wednesdays 13:15 to 15:00) | Due Date ([AoE](https://en.wikipedia.org/wiki/Anywhere_on_Earth)) | Solution Released |
-| :--                                            | :--              | :--                     | :--              | :--              |
-| First week tasks                               | -                | 22.09.2021              | -                | -                |
-| Exercise Session 1                             | -                | 29.09.2021              | 03.10.2021       | 04.10.2021       |
-| Exercise Session 2                             | 04.10.2021       | 06.10.2021              | 10.10.2021       | 11.10.2021       |
-| Exercise Session 3                             | 11.10.2021       | 13.10.2021              | 17.10.2021       | 18.10.2021       |
-| Exercise Session 4                             | 18.10.2021       | 20.10.2021              | 24.10.2021       | 25.10.2021       |
-| Exercise Session 5                             | 25.10.2021       | 27.10.2021              | 31.11.2021       | 01.11.2021       |
-| Exercise Session 6                             | 01.11.2021       | 03.11.2021              | 07.11.2021       | 08.11.2021       |
-| **Midterm exam**                               | -                | 10.11.2021              | -                | -                |
-| Exercise Session 7                             | 15.11.2021       | 17.11.2021              | 21.11.2021       | 22.11.2021       |
-| Exercise Session 8                             | 22.11.2021       | 24.11.2021              | 28.11.2021       | 29.11.2021       |
-| Exercise Session 9                             | 29.11.2021       | 01.12.2021 & 08.12.2021 | 12.12.2021       | 13.12.2021       |
-| Exercise Session 10                            | 06.12.2021       | 08.12.2021 & 15.12.2021 | 19.12.2021       | 20.12.2021       |
-| **Final exam**                                 | -                | 22.12.2021              | -                | -                |
+| Title                                          | Handout Released | Session (Wednesdays 13:15 to 15:00) | Solution Released |
+| :--                                            | :--              | :--                     | :--              |
+| First week tasks                               | -                | 22.09.2021              | -                |
+| Exercise Session 1                             | -                | 29.09.2021              | 04.10.2021       |
+| Exercise Session 2                             | 04.10.2021       | 06.10.2021              | 11.10.2021       |
+| Exercise Session 3                             | 11.10.2021       | 13.10.2021              | 18.10.2021       |
+| Exercise Session 4                             | 18.10.2021       | 20.10.2021              | 25.10.2021       |
+| Exercise Session 5                             | 25.10.2021       | 27.10.2021              | 01.11.2021       |
+| Exercise Session 6                             | 01.11.2021       | 03.11.2021              | 08.11.2021       |
+| **Midterm exam**                               | -                | 10.11.2021              | -                |
+| Exercise Session 7                             | 15.11.2021       | 17.11.2021              | 22.11.2021       |
+| Exercise Session 8                             | 22.11.2021       | 24.11.2021              | 29.11.2021       |
+| Exercise Session 9                             | 29.11.2021       | 01.12.2021 & 08.12.2021 | 13.12.2021       |
+| Exercise Session 10                            | 06.12.2021       | 08.12.2021 & 15.12.2021 | 20.12.2021       |
+| **Final exam**                                 | -                | 22.12.2021              | -                |
 
 Exercises are pen and paper style questions that will prepare you for the final exam.
-Exercises should be done in groups and submitted via Google Drive, see details in the [Group workspaces](exercises/Group workspaces.md) page.
+Exercises should be done in groups.
 
 ## Exam Schedule
 
