@@ -9,7 +9,7 @@ We will use GitLab's issue tracker as a discussion forum. Feel free to [open an 
 
 # First-week tasks
 
-1. [Join the Discord](https://discord.gg/8ud6UpE)
+1. [Join the Discord](https://discord.gg/UqzqX2wTWW)
 2. Log into gitlab: https://gitlab.epfl.ch/users/sign_in
 3. [Register your Gaspar](https://docs.google.com/spreadsheets/d/12KvfD_jN5AcApmWhCz7xZmln48fctQOa984RPWrqRkY/edit#gid=0) to obtain a GitLab repo for the labs (login with your `@epfl.ch` address to have write access).
 4. Follow the [Tools Setup](labs/tools-setup.md) page.
