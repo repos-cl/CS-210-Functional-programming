@@ -75,7 +75,7 @@ repository and run `code . ` inside as usual: [`git clone https://gitlab.epfl.ch
 | Quickcheck                        | 03.11.2021 | 05.11.2021              | 18.11.2021 |
 | Bloxorz                           | 10.11.2021 | 12.11.2021 & 19.11.2021 | 25.11.2021 |
 | Codecs                            | 24.11.2021 | 26.11.2021 & 03.12.2021 | 09.12.2021 |
-| Interpreter                       | 08.12.2021 | 10.12.2021 & 17.12.2021 | 24.12.2021 |
+| Interpreter                       | 08.12.2021 | 10.12.2021 & 17.12.2021 | 23.12.2021 |
 
 Labs are individual assignments where you get to write Scala programs using the concepts learned during lectures.
 Labs are submitted by pushing your code on GitLab, see details in the [grading and submission](labs/grading-and-submission.md) page.
