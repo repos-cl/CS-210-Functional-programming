@@ -43,18 +43,18 @@ repository and run `code . ` inside as usual: [`git clone https://gitlab.epfl.ch
 | Week | Date        | Topic                                       | Videos & Slides              |
 | :--  | :--         | :--                                         | :--                |
 | 1    | 22.09.2021  | Intro class                                 | Introduction ([Video][Video 1.1.1], [Slides][Slides 1.1.1])<br/>Elements of programming ([Video][Video 1.1.2], [Slides][Slides 1.1.2])<br/>Evaluation strategies and termination ([Video][Video 1.1.3], [Slides][Slides 1.1.3])<br/>Value Definitions and Conditionals ([Video][Video 1.1.4], [Slides][Slides 1.1.4])<br/>Square Roots with Newtons Methods ([Video][Video 1.1.5], [Slides][Slides 1.1.5])<br/>Blocks and lexical scopes ([Video][Video 1.1.6], [Slides][Slides 1.1.6])<br/>Tail Recursion ([Video][Video 1.1.7], [Slides][Slides 1.1.7]) |
-| 2    | 29.09.2021  | Recursion / Function values | [Higher-Order Functions][Video 1.2.1], [Currying][Video 1.2.2], [Finding FixedPoints][Video 1.2.3], [Scala Syntax Summary][Video 1.2.4], [Functions and Data][Video 1.2.5], [Data Abstraction][Video 1.2.6], [Evaluation and Operators][Video 1.2.7] |
-| 3    | 06.09.2021  | Classes                                     | [Class Hierarchies][Video 1.3.1], [How Classes are Organized][Video 1.3.2], [Polymorphism][Video 1.3.3], [Objects Everywhere][Video 1.3.4], [Functions as Objects][Video 1.3.5] |
-| 4    | 13.10.2021  | Classes                                     | [Decomposition][Video 1.4.1], [Pattern Matching][Video 1.4.2], [Lists][Video 1.4.3], [Enums][Video 1.4.4], [Subtyping and Generics][Video 1.4.5], [Variance][Video 1.4.6]                   |
-| 5    | 20.10.2021  | List                                        | [A closer look at lists][Video 1.5.1], [Tuples and generic methods][Video 1.5.2], [Higher order list functions][Video 1.5.3], [Reduction of lists][Video 1.5.4], [Reasoning about lists][Video 1.5.5]                   |
-| 6    | 27.10.2021  | Collection                                  | [Other Collections][Video 1.6.1], [Combinatorial Search and For-Expressions][Video 1.6.2], [Combinatorial Search Example][Video 1.6.3], [Maps][Video 1.6.4], [Putting the Pieces Together][Video 1.6.5] |
-| 7    | 03.11.2021  | Monads                                      | [Recap][Video 2.1.1], [Queries with for][Video 2.1.2], [Translation of for][Video 2.1.3], [Functional Random Generators][Video 2.1.4], [Monads][Video 2.1.5], [Exceptional Monads][Video 2.1.6]                   |
+| 2    | 29.09.2021  | Recursion / Function values | Higher-Order Functions ([Video][Video 1.2.1], [Slides][Slides 1.2.1]<br/>Currying ([Video][Video 1.2.2], [Slides][Slides 1.2.2]<br/>Finding FixedPoints ([Video][Video 1.2.3], [Slides][Slides 1.2.3]<br/>Scala Syntax Summary ([Video][Video 1.2.4], [Slides][Slides 1.2.4]<br/>Functions and Data ([Video][Video 1.2.5], [Slides][Slides 1.2.5]<br/>Data Abstraction ([Video][Video 1.2.6], [Slides][Slides 1.2.6]<br/>Evaluation and Operators ([Video][Video 1.2.7], [Slides][Slides 1.2.7]) |
+| 3    | 06.09.2021  | Classes                                     | Class Hierarchies ([Video][Video 1.3.1], [Slides][Slides 1.3.1]<br/>How Classes are Organized ([Video][Video 1.3.2], [Slides][Slides 1.3.2]<br/>Polymorphism ([Video][Video 1.3.3], [Slides][Slides 1.3.3]<br/>Objects Everywhere ([Video][Video 1.3.4], [Slides][Slides 1.3.4]<br/>Functions as Objects ([Video][Video 1.3.5], [Slides][Slides 1.3.5]) |
+| 4    | 13.10.2021  | Classes                                     | Decomposition ([Video][Video 1.4.1], [Slides][Slides 1.4.1]<br/>Pattern Matching ([Video][Video 1.4.2], [Slides][Slides 1.4.2]<br/>Lists ([Video][Video 1.4.3], [Slides][Slides 1.4.3]<br/>Enums ([Video][Video 1.4.4], [Slides][Slides 1.4.4]<br/>Subtyping and Generics ([Video][Video 1.4.5], [Slides][Slides 1.4.5]<br/>Variance ([Video][Video 1.4.6], [Slides][Slides 1.4.6])                   |
+| 5    | 20.10.2021  | List                                        | A closer look at lists ([Video][Video 1.5.1], [Slides][Slides 1.5.1]<br/>Tuples and generic methods ([Video][Video 1.5.2], [Slides][Slides 1.5.2]<br/>Higher order list functions ([Video][Video 1.5.3], [Slides][Slides 1.5.3]<br/>Reduction of lists ([Video][Video 1.5.4], [Slides][Slides 1.5.4]<br/>Reasoning about lists ([Video][Video 1.5.5], [Slides][Slides 1.5.5])                   |
+| 6    | 27.10.2021  | Collection                                  | Other Collections ([Video][Video 1.6.1], [Slides][Slides 1.6.1]<br/>Combinatorial Search and For-Expressions ([Video][Video 1.6.2], [Slides][Slides 1.6.2]<br/>Combinatorial Search Example ([Video][Video 1.6.3], [Slides][Slides 1.6.3]<br/>Maps ([Video][Video 1.6.4], [Slides][Slides 1.6.4]<br/>Putting the Pieces Together ([Video][Video 1.6.5], [Slides][Slides 1.6.5]) |
+| 7    | 03.11.2021  | Monads                                      | Recap ([Video][Video 2.1.1], [Slides][Slides 2.1.1]<br/>Queries with for ([Video][Video 2.1.2], [Slides][Slides 2.1.2]<br/>Translation of for ([Video][Video 2.1.3], [Slides][Slides 2.1.3]<br/>Functional Random Generators ([Video][Video 2.1.4], [Slides][Slides 2.1.4]<br/>Monads ([Video][Video 2.1.5], [Slides][Slides 2.1.5]<br/>Exceptional Monads ([Video][Video 2.1.6], [Slides][Slides 2.1.6])                   |
 | 8    | 10.11.2021  | **Midterm exam**                            | -        |
-| 9    | 17.11.2021  | Lazy evaluation                             | [Structural Induction on Trees][Video 2.2.1], [Lazy Lists][Video 2.2.2], [Lazy Evaluation][Video 2.2.3], [Infinite Sequences][Video 2.2.4], [Case Study][Video 2.2.5]                   |
-| 10   | 24.11.2021  | Type-directed computation                   | [Contextual abstraction][Video 2.3.1], [Using clauses and given instances][Video 2.3.2], [Type classes][Video 2.3.3], [Abstract algebra and type classes][Video 2.3.4], [Context passing][Video 2.3.5], [Implicit function types][Video 2.3.6]                   |
-| 11   | 01.12.2021  | State                                       | [Functions and state][Video 2.4.1], [Identity and change][Video 2.4.2], [Loops][Video 2.4.3], [Discrete Event Simulation][Video 2.4.4]                  |
-| 12   | 08.12.2021  | Interpreter I                               | [Interpreter for Arithmetic][Video 3.1.1], [Substitution Interpreter for Recursive Functions][Video 3.1.2], [Environment Instead of Substitutions][Video 3.1.3], [Higher-Order Functions Using Naive Substitutions][Video 3.1.4], [Avoiding Variable Capture][Video 3.1.5], [Higher-Order Functions Using Environments][Video 3.1.6], [Nested Recursive Definitions][Video 3.1.7]   |
-| 13   | 15.12.2021  | Parsing with Combinators / Lambda Calculus  | [Parsing with Combinators][Video 3.2.1], [Recursion as Self-Application][Video 3.2.2], [Church Numerals and Conditionals][Video 3.2.3] |
+| 9    | 17.11.2021  | Lazy evaluation                             | Structural Induction on Trees ([Video][Video 2.2.1], [Slides][Slides 2.2.1]<br/>Lazy Lists ([Video][Video 2.2.2], [Slides][Slides 2.2.2]<br/>Lazy Evaluation ([Video][Video 2.2.3], [Slides][Slides 2.2.3]<br/>Infinite Sequences ([Video][Video 2.2.4], [Slides][Slides 2.2.4]<br/>Case Study ([Video][Video 2.2.5], [Slides][Slides 2.2.5])                   |
+| 10   | 24.11.2021  | Type-directed computation                   | Contextual abstraction ([Video][Video 2.3.1], [Slides][Slides 2.3.1]<br/>Using clauses and given instances ([Video][Video 2.3.2], [Slides][Slides 2.3.2]<br/>Type classes ([Video][Video 2.3.3], [Slides][Slides 2.3.3]<br/>Abstract algebra and type classes ([Video][Video 2.3.4], [Slides][Slides 2.3.4]<br/>Context passing ([Video][Video 2.3.5], [Slides][Slides 2.3.5]<br/>Implicit function types ([Video][Video 2.3.6], [Slides][Slides 2.3.6])                   |
+| 11   | 01.12.2021  | State                                       | Functions and state ([Video][Video 2.4.1], [Slides][Slides 2.4.1]<br/>Identity and change ([Video][Video 2.4.2], [Slides][Slides 2.4.2]<br/>Loops ([Video][Video 2.4.3], [Slides][Slides 2.4.3]<br/>Discrete Event Simulation ([Video][Video 2.4.4], [Slides][Slides 2.4.4])                  |
+| 12   | 08.12.2021  | Interpreter I                               | Interpreter for Arithmetic ([Video][Video 3.1.1], [Slides][Slides 3.1.1]<br/>Substitution Interpreter for Recursive Functions ([Video][Video 3.1.2], [Slides][Slides 3.1.2]<br/>Environment Instead of Substitutions ([Video][Video 3.1.3], [Slides][Slides 3.1.3]<br/>Higher-Order Functions Using Naive Substitutions ([Video][Video 3.1.4], [Slides][Slides 3.1.4]<br/>Avoiding Variable Capture ([Video][Video 3.1.5], [Slides][Slides 3.1.5]<br/>Higher-Order Functions Using Environments ([Video][Video 3.1.6], [Slides][Slides 3.1.6]<br/>Nested Recursive Definitions ([Video][Video 3.1.7], [Slides][Slides 3.1.7])   |
+| 13   | 15.12.2021  | Parsing with Combinators / Lambda Calculus  | Parsing with Combinators ([Video][Video 3.2.1])<br/>Recursion as Self-Application ([Video][Video 3.2.2])<br/>Church Numerals and Conditionals ([Video][Video 3.2.3]) |
 | 14   | 22.12.2021  | **Final exam**                              | -        |
 
 ## Lab Schedule
@@ -109,18 +109,18 @@ Information about exam organization will be communicated by email a few days bef
 
 
 [Video 1.1.1]: https://tube.switch.ch/videos/7ed71e65
-[Slides 1.1.1]: ./slides/progfun1-1-1.pdf
 [Video 1.1.2]: https://tube.switch.ch/videos/eefaaa33
-[Slides 1.1.2]: ./slides/progfun1-1-2.pdf
 [Video 1.1.3]: https://tube.switch.ch/videos/7ec55c9c
-[Slides 1.1.3]: ./slides/progfun1-1-3.pdf
 [Video 1.1.4]: https://tube.switch.ch/videos/f8abe6bf
-[Slides 1.1.4]: ./slides/progfun1-1-4.pdf
 [Video 1.1.5]: https://tube.switch.ch/videos/1f8d3205
-[Slides 1.1.5]: ./slides/progfun1-1-5.pdf
 [Video 1.1.6]: https://tube.switch.ch/videos/9274e0f4
-[Slides 1.1.6]: ./slides/progfun1-1-6.pdf
 [Video 1.1.7]: https://tube.switch.ch/videos/1843caa3
+[Slides 1.1.1]: ./slides/progfun1-1-1.pdf
+[Slides 1.1.2]: ./slides/progfun1-1-2.pdf
+[Slides 1.1.3]: ./slides/progfun1-1-3.pdf
+[Slides 1.1.4]: ./slides/progfun1-1-4.pdf
+[Slides 1.1.5]: ./slides/progfun1-1-5.pdf
+[Slides 1.1.6]: ./slides/progfun1-1-6.pdf
 [Slides 1.1.7]: ./slides/progfun1-1-7.pdf
 
 [Video 1.2.1]: https://tube.switch.ch/videos/646cfe4f
@@ -130,12 +130,24 @@ Information about exam organization will be communicated by email a few days bef
 [Video 1.2.5]: https://tube.switch.ch/videos/dec623bc
 [Video 1.2.6]: https://tube.switch.ch/videos/6e8643cf
 [Video 1.2.7]: https://tube.switch.ch/videos/dc82606b
+[Slides 1.2.1]: ./slides/progfun1-2-1.pdf
+[Slides 1.2.2]: ./slides/progfun1-2-2.pdf
+[Slides 1.2.3]: ./slides/progfun1-2-3.pdf
+[Slides 1.2.4]: ./slides/progfun1-2-4.pdf
+[Slides 1.2.5]: ./slides/progfun1-2-5.pdf
+[Slides 1.2.6]: ./slides/progfun1-2-6.pdf
+[Slides 1.2.7]: ./slides/progfun1-2-7.pdf
 
 [Video 1.3.1]: https://tube.switch.ch/videos/56c88e00
 [Video 1.3.2]: https://tube.switch.ch/videos/1c969056
 [Video 1.3.3]: https://tube.switch.ch/videos/d3a7aff4
 [Video 1.3.4]: https://tube.switch.ch/videos/03486c5a
 [Video 1.3.5]: https://tube.switch.ch/videos/82b0e104
+[Slides 1.3.1]: ./slides/progfun1-2-1.pdf
+[Slides 1.3.2]: ./slides/progfun1-3-2.pdf
+[Slides 1.3.3]: ./slides/progfun1-3-3.pdf
+[Slides 1.3.4]: ./slides/progfun1-3-4.pdf
+[Slides 1.3.5]: ./slides/progfun1-3-5.pdf
 
 [Video 1.4.1]: https://tube.switch.ch/videos/f5879da4
 [Video 1.4.2]: https://tube.switch.ch/videos/e7df77e5
@@ -143,18 +155,35 @@ Information about exam organization will be communicated by email a few days bef
 [Video 1.4.4]: https://tube.switch.ch/videos/ea910999
 [Video 1.4.5]: https://tube.switch.ch/videos/9a844297
 [Video 1.4.6]: https://tube.switch.ch/videos/35c4e417
+[Slides 1.4.1]: ./slides/progfun1-4-1.pdf
+[Slides 1.4.2]: ./slides/progfun1-4-2.pdf
+[Slides 1.4.3]: ./slides/progfun1-4-3.pdf
+[Slides 1.4.4]: ./slides/progfun1-4-4.pdf
+[Slides 1.4.5]: ./slides/progfun1-4-5.pdf
+[Slides 1.4.6]: ./slides/progfun1-4-6.pdf
 
 [Video 1.5.1]: https://tube.switch.ch/videos/8e9cf6a5
 [Video 1.5.2]: https://tube.switch.ch/videos/40edd184
 [Video 1.5.3]: https://tube.switch.ch/videos/af626839
 [Video 1.5.4]: https://tube.switch.ch/videos/e0e380fe
 [Video 1.5.5]: https://tube.switch.ch/videos/9ebad679
+[Slides 1.5.1]: ./slides/progfun1-5-1.pdf
+[Slides 1.5.2]: ./slides/progfun1-5-2.pdf
+[Slides 1.5.3]: ./slides/progfun1-5-3.pdf
+[Slides 1.5.4]: ./slides/progfun1-5-4.pdf
+[Slides 1.5.5]: ./slides/progfun1-5-5.pdf
 
 [Video 1.6.1]: https://tube.switch.ch/videos/58a6fe2a
 [Video 1.6.2]: https://tube.switch.ch/videos/a09a7679
 [Video 1.6.3]: https://tube.switch.ch/videos/7f2fcf99
 [Video 1.6.4]: https://tube.switch.ch/videos/a4519732
 [Video 1.6.5]: https://tube.switch.ch/videos/30005570
+[Slides 1.6.1]: ./slides/progfun1-6-1.pdf
+[Slides 1.6.2]: ./slides/progfun1-6-2.pdf
+[Slides 1.6.3]: ./slides/progfun1-6-3.pdf
+[Slides 1.6.4]: ./slides/progfun1-6-4.pdf
+[Slides 1.6.5]: ./slides/progfun1-6-5.pdf
+[Slides 1.6.6]: ./slides/progfun1-6-6.pdf
 
 [Video 2.1.1]: https://tube.switch.ch/videos/680a1d2a
 [Video 2.1.2]: https://tube.switch.ch/videos/935b0da5
@@ -162,12 +191,23 @@ Information about exam organization will be communicated by email a few days bef
 [Video 2.1.4]: https://tube.switch.ch/videos/f9c5677b
 [Video 2.1.5]: https://tube.switch.ch/videos/16b5d240
 [Video 2.1.6]: https://tube.switch.ch/videos/fdfb0609
+[Slides 2.1.1]: ./slides/progfun2-1-1.pdf
+[Slides 2.1.2]: ./slides/progfun2-1-2.pdf
+[Slides 2.1.3]: ./slides/progfun2-1-3.pdf
+[Slides 2.1.4]: ./slides/progfun2-1-4.pdf
+[Slides 2.1.5]: ./slides/progfun2-1-5.pdf
+[Slides 2.1.6]: ./slides/progfun2-1-6.pdf
 
 [Video 2.2.1]: https://tube.switch.ch/videos/0accfa13
 [Video 2.2.2]: https://tube.switch.ch/videos/fbd7e361
 [Video 2.2.3]: https://tube.switch.ch/videos/8506774b
 [Video 2.2.4]: https://tube.switch.ch/videos/7064a6b1
 [Video 2.2.5]: https://tube.switch.ch/videos/889a5305
+[Slides 2.2.1]: ./slides/progfun2-2-1.pdf
+[Slides 2.2.2]: ./slides/progfun2-2-2.pdf
+[Slides 2.2.3]: ./slides/progfun2-2-3.pdf
+[Slides 2.2.4]: ./slides/progfun2-2-4.pdf
+[Slides 2.2.5]: ./slides/progfun2-2-5.pdf
 
 [Video 2.3.1]: https://tube.switch.ch/videos/d5df9a21
 [Video 2.3.2]: https://tube.switch.ch/videos/cef63f8a
@@ -175,15 +215,28 @@ Information about exam organization will be communicated by email a few days bef
 [Video 2.3.4]: https://tube.switch.ch/videos/a65a3022
 [Video 2.3.5]: https://tube.switch.ch/videos/ee6fdc37
 [Video 2.3.6]: https://tube.switch.ch/videos/cab2248b
+[Slides 2.3.1]: ./slides/progfun2-3-1.pdf
+[Slides 2.3.2]: ./slides/progfun2-3-2.pdf
+[Slides 2.3.3]: ./slides/progfun2-3-3.pdf
+[Slides 2.3.4]: ./slides/progfun2-3-4.pdf
+[Slides 2.3.5]: ./slides/progfun2-3-5.pdf
+[Slides 2.3.6]: ./slides/progfun2-3-6.pdf
 
 [Video 2.4.1]: https://tube.switch.ch/videos/f32bc013
 [Video 2.4.2]: https://tube.switch.ch/videos/7bf009ce
 [Video 2.4.3]: https://tube.switch.ch/videos/a2a7b6fb
 [Video 2.4.4]: https://tube.switch.ch/videos/95c82b17
+[Slides 2.4.1]: ./slides/progfun2-4-1.pdf
+[Slides 2.4.2]: ./slides/progfun2-4-2.pdf
+[Slides 2.4.3]: ./slides/progfun2-4-3.pdf
+[Slides 2.4.4]: ./slides/progfun2-4-4.pdf
 
 [Video 2.5.1]: https://tube.switch.ch/videos/5ca69d05
 [Video 2.5.2]: https://tube.switch.ch/videos/700fc8b5
 [Video 2.5.3]: https://tube.switch.ch/videos/d93a3d12
+[Slides 2.5.1]: ./slides/progfun2-5-1.pdf
+[Slides 2.5.2]: ./slides/progfun2-5-2.pdf
+[Slides 2.5.3]: ./slides/progfun2-5-3.pdf
 
 [Video 3.1.1]: https://tube.switch.ch/videos/b053ad9d
 [Video 3.1.2]: https://tube.switch.ch/videos/59b7ae00
@@ -192,6 +245,17 @@ Information about exam organization will be communicated by email a few days bef
 [Video 3.1.5]: https://tube.switch.ch/videos/94bc1565
 [Video 3.1.6]: https://tube.switch.ch/videos/6d332501
 [Video 3.1.7]: https://tube.switch.ch/videos/18ba7117
+[Slides 3.1.1]: ./slides/progfun3-1-1.pdf
+[Slides 3.1.2]: ./slides/progfun3-1-2.pdf
+[Slides 3.1.3]: ./slides/progfun3-1-3.pdf
+[Slides 3.1.4]: ./slides/progfun3-1-4.pdf
+[Slides 3.1.5]: ./slides/progfun3-1-5.pdf
+[Slides 3.1.6]: ./slides/progfun3-1-6.pdf
+[Slides 3.1.7]: ./slides/progfun3-1-7.pdf
+
 [Video 3.2.1]: https://tube.switch.ch/videos/d08dd17f
 [Video 3.2.2]: https://tube.switch.ch/videos/17841152
 [Video 3.2.3]: https://tube.switch.ch/videos/f203e6a9
+[Slides 3.2.1]: ./slides/progfun3-2-1.pdf
+[Slides 3.2.2]: ./slides/progfun3-2-2.pdf
+[Slides 3.2.3]: ./slides/progfun3-2-3.pdf
