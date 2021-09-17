@@ -26,7 +26,7 @@ The grading of the course is divided between labs (30%), a midterm exam (20%) an
 | :---        | :--- |
 | Professors  | [Martin Odersky](https://people.epfl.ch/martin.odersky), [Viktor Kunčak](https://people.epfl.ch/viktor.kuncak) |
 | TAs         | [Dragana Milovancevic](https://people.epfl.ch/dragana.milovancevic), [Ergys Dona](https://people.epfl.ch/ergys.dona), [Jean-Baptiste Cordonnier](https://people.epfl.ch/jean-baptiste.cordonnier), [Matthieu Bovel](https://people.epfl.ch/matthieu.bovel) |
-| Student TAs |  |
+| Student TAs | [Joshua Bernimoulin](https://people.epfl.ch/joshua.bernimoulin), [Mohamed Yassine Boukhari](https://people.epfl.ch/mohamed.boukhari), [Hind El Bouchrifi ](https://people.epfl.ch/hind.elbouchrifi), [Luca Giordano](https://people.epfl.ch/lucas.giordano), [Mohamed Hichem Hadhri](https://people.epfl.ch/mohamed.hadhri), [Salim Najib](https://people.epfl.ch/salim.najib), [Arthur Vignon](https://people.epfl.ch/arthur.vignon) |
 
 ## Rooms
 
