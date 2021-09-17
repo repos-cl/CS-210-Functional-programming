@@ -55,13 +55,13 @@ repository and run `code . ` inside as usual: [`git clone https://gitlab.epfl.ch
 | 5    | 20.10.2021  | List                                        | [A closer look at lists][Video 1.5.1], [Tuples and generic methods][Video 1.5.2], [Higher order list functions][Video 1.5.3], [Reduction of lists][Video 1.5.4], [Reasoning about lists][Video 1.5.5]                   |
 | 6    | 27.10.2021  | Collection                                  | [Other Collections][Video 1.6.1], [Combinatorial Search and For-Expressions][Video 1.6.2], [Combinatorial Search Example][Video 1.6.3], [Maps][Video 1.6.4], [Putting the Pieces Together][Video 1.6.5] |
 | 7    | 03.11.2021  | Monads                                      | [Recap][Video 2.1.1], [Queries with for][Video 2.1.2], [Translation of for][Video 2.1.3], [Functional Random Generators][Video 2.1.4], [Monads][Video 2.1.5], [Exceptional Monads][Video 2.1.6]                   |
-| 8    | 10.11.2021  | **Midterm exam** / Lazy evaluation          | [Structural Induction on Trees][Video 2.2.1], [Lazy Lists][Video 2.2.2], [Lazy Evaluation][Video 2.2.3], [Infinite Sequences][Video 2.2.4], [Case Study][Video 2.2.5]                   |
-| 9    | 17.11.2021  | Type-directed computation                   | [Contextual abstraction][Video 2.3.1], [Using clauses and given instances][Video 2.3.2], [Type classes][Video 2.3.3], [Abstract algebra and type classes][Video 2.3.4], [Context passing][Video 2.3.5], [Implicit function types][Video 2.3.6]                   |
-| 10   | 24.11.2021  | State                                       | [Functions and state][Video 2.4.1], [Identity and change][Video 2.4.2], [Loops][Video 2.4.3], [Discrete Event Simulation][Video 2.4.4]                  |
-| 11   | 01.12.2021  | Functional Reactive Programming and Constraint Propagation / Symbolic computation |  [Observer Pattern][Video 2.5.1], [Functional Reactive Programming][Video 2.5.2], [A Simple FRP Implementation][Video 2.5.3]                  |
+| 8    | 10.11.2021  | **Midterm exam**                            | -        |
+| 9    | 17.11.2021  | Lazy evaluation                             | [Structural Induction on Trees][Video 2.2.1], [Lazy Lists][Video 2.2.2], [Lazy Evaluation][Video 2.2.3], [Infinite Sequences][Video 2.2.4], [Case Study][Video 2.2.5]                   |
+| 10   | 24.11.2021  | Type-directed computation                   | [Contextual abstraction][Video 2.3.1], [Using clauses and given instances][Video 2.3.2], [Type classes][Video 2.3.3], [Abstract algebra and type classes][Video 2.3.4], [Context passing][Video 2.3.5], [Implicit function types][Video 2.3.6]                   |
+| 11   | 01.12.2021  | State                                       | [Functions and state][Video 2.4.1], [Identity and change][Video 2.4.2], [Loops][Video 2.4.3], [Discrete Event Simulation][Video 2.4.4]                  |
 | 12   | 08.12.2021  | Interpreter I                               | [Interpreter for Arithmetic][Video 3.1.1], [Substitution Interpreter for Recursive Functions][Video 3.1.2], [Environment Instead of Substitutions][Video 3.1.3], [Higher-Order Functions Using Naive Substitutions][Video 3.1.4], [Avoiding Variable Capture][Video 3.1.5], [Higher-Order Functions Using Environments][Video 3.1.6], [Nested Recursive Definitions][Video 3.1.7]   |
 | 13   | 15.12.2021  | Parsing with Combinators / Lambda Calculus  | [Parsing with Combinators][Video 3.2.1], [Recursion as Self-Application][Video 3.2.2], [Church Numerals and Conditionals][Video 3.2.3] |
-| 14   | 22.12.2021  | **Final exam**              |                    |
+| 14   | 22.12.2021  | **Final exam**                              | -        |
 
 ## Lab Schedule
 
