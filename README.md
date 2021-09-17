@@ -7,7 +7,7 @@ This repository will be used as the website for Functional Programming CS-210. I
 
 We will use GitLab's issue tracker as a discussion forum. Feel free to [open an issue](https://gitlab.epfl.ch/lamp/cs210/issues/new) if you have any comments or questions
 
-# First-week tasks
+# First-week Tasks
 
 1. [Join the Discord](https://discord.gg/UqzqX2wTWW)
 2. Log into gitlab: https://gitlab.epfl.ch/users/sign_in
@@ -28,16 +28,11 @@ The grading of the course is divided between labs (30%), a midterm exam (20%) an
 | TAs         | [Dragana Milovancevic](https://people.epfl.ch/dragana.milovancevic), [Ergys Dona](https://people.epfl.ch/ergys.dona), [Jean-Baptiste Cordonnier](https://people.epfl.ch/jean-baptiste.cordonnier), [Matthieu Bovel](https://people.epfl.ch/matthieu.bovel) |
 | Student TAs | [Joshua Bernimoulin](https://people.epfl.ch/joshua.bernimoulin), [Mohamed Yassine Boukhari](https://people.epfl.ch/mohamed.boukhari), [Hind El Bouchrifi ](https://people.epfl.ch/hind.elbouchrifi), [Luca Giordano](https://people.epfl.ch/lucas.giordano), [Mohamed Hichem Hadhri](https://people.epfl.ch/mohamed.hadhri), [Salim Najib](https://people.epfl.ch/salim.najib), [Arthur Vignon](https://people.epfl.ch/arthur.vignon) |
 
-## Rooms
-
-Lectures are prerecorded and published on this page.
-Exercise sessions take place on Wednesdays from 13:15 to 15:00.
-Lab sessions take place on Fridays from 10:15 to 12:00.
-These office hours are there to help you setting up Git and Java on your machines and answer any other question you might have about the class. We will be happy to arrange further in-person or virtual (Discord, Zoom, etc.) office hours--just contact one of us with a list of all your available time slots.
-
 ## Lecture Schedule
 
 <!-- date -d "30/09/2019 364 days" +"%d.%m.%Y" -->
+
+Lectures are prerecorded and published below.
 
 **Note**: In some lectures, worksheets are used to present code. To learn how to
 use worksheets yourselves, please follow the [Tools
@@ -64,6 +59,8 @@ repository and run `code . ` inside as usual: [`git clone https://gitlab.epfl.ch
 
 ## Lab Schedule
 
+Lab sessions take place on Fridays from 10:15 to 12:00.
+
 | Title                             | Start Date | Session (Fridays 10:15 to 12:00) | Due Date ([AoE](https://en.wikipedia.org/wiki/Anywhere_on_Earth)) |
 | :--                               | :--        | :--                     | :--        |
 | Recursion                         | 22.09.2021 | 24.09.2021              | 03.10.2021 |
@@ -80,6 +77,8 @@ Labs are individual assignments where you get to write Scala programs using the 
 Labs are submitted by pushing your code on GitLab, see details in the [grading and submission](labs/grading-and-submission.md) page.
 
 ## Exercise Schedule
+
+Exercise sessions take place on Wednesdays from 13:15 to 15:00.
 
 | Title                                          | Handout Released | Session (Wednesdays 13:15 to 15:00) | Solution Released |
 | :--                                            | :--              | :--                     | :--              |
