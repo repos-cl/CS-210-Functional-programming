@@ -46,55 +46,57 @@ Setup](labs/tools-setup.md) and [example lab](labs/example-lab.md). To create a
 new empty project to experiment with worksheets, you can clone the following
 repository and run `code . ` inside as usual: [`git clone https://gitlab.epfl.ch/lamp/cs210-worksheets`](https://gitlab.epfl.ch/lamp/cs210-worksheets)
 
-| Week | Date        | Topic                       | Video              |
-| :--  | :--         | :--                         | :--                |
-| 1    | 16.09.2020  | Intro class                 | [Introduction][Video 1.1.1], [Elements of programming][Video 1.1.2], [Evaluation strategies and termination][Video 1.1.3], [Value Definitions and Conditionals][Video 1.1.4], [Square Roots with Newtons Methods][Video 1.1.5], [Blocks and lexical scopes][Video 1.1.6], [Tail Recursion][Video 1.1.7] |
-| 2    | 23.09.2020  | Recursion / Function values | [Higher-Order Functions][Video 1.2.1], [Currying][Video 1.2.2], [Finding FixedPoints][Video 1.2.3], [Scala Syntax Summary][Video 1.2.4], [Functions and Data][Video 1.2.5], [Data Abstraction][Video 1.2.6], [Evaluation and Operators][Video 1.2.7] |
-| 3    | 30.09.2020  | Classes                     | [Class Hierarchies][Video 1.3.1], [How Classes are Organized][Video 1.3.2], [Polymorphism][Video 1.3.3], [Objects Everywhere][Video 1.3.4], [Functions as Objects][Video 1.3.5] |
-| 4    | 07.10.2020  | Classes                     | [Decomposition][Video 1.4.1], [Pattern Matching][Video 1.4.2], [Lists][Video 1.4.3], [Enums][Video 1.4.4], [Subtyping and Generics][Video 1.4.5], [Variance][Video 1.4.6]                   |
-| 5    | 14.10.2020  | List                        | [A closer look at lists][Video 1.5.1], [Tuples and generic methods][Video 1.5.2], [Higher order list functions][Video 1.5.3], [Reduction of lists][Video 1.5.4], [Reasoning about lists][Video 1.5.5]                   |
-| 6    | 21.10.2020  | Collection                  | [Other Collections][Video 1.6.1], [Combinatorial Search and For-Expressions][Video 1.6.2], [Combinatorial Search Example][Video 1.6.3], [Maps][Video 1.6.4], [Putting the Pieces Together][Video 1.6.5] |
-| 7    | 28.10.2020  | Monads                      | [Recap][Video 2.1.1], [Queries with for][Video 2.1.2], [Translation of for][Video 2.1.3], [Functional Random Generators][Video 2.1.4], [Monads][Video 2.1.5], [Exceptional Monads][Video 2.1.6]                   |
-| 8    | 04.11.2020  | Lazy evaluation             | [Structural Induction on Trees][Video 2.2.1], [Lazy Lists][Video 2.2.2], [Lazy Evaluation][Video 2.2.3], [Infinite Sequences][Video 2.2.4], [Case Study][Video 2.2.5]                   |
-| 9    | 11.11.2020  | Type-directed computation   | [Contextual abstraction][Video 2.3.1], [Using clauses and given instances][Video 2.3.2], [Type classes][Video 2.3.3], [Abstract algebra and type classes][Video 2.3.4], [Context passing][Video 2.3.5], [Implicit function types][Video 2.3.6]                   |
-| 10   | 18.11.2020  | State                       |  [Functions and state][Video 2.4.1], [Identity and change][Video 2.4.2], [Loops][Video 2.4.3], [Discrete Event Simulation][Video 2.4.4]                  |
-| 11   | 25.11.2020  | Functional Reactive Programming and Constraint Propagation / Symbolic computation |  [Observer Pattern][Video 2.5.1], [Functional Reactive Programming][Video 2.5.2], [A Simple FRP Implementation][Video 2.5.3]                  |
-| 12   | 02.12.2020  | Interpreter I                | [Interpreter for Arithmetic][Video 3.1.1], [Substitution Interpreter for Recursive Functions][Video 3.1.2], [Environment Instead of Substitutions][Video 3.1.3], [Higher-Order Functions Using Naive Substitutions][Video 3.1.4], [Avoiding Variable Capture][Video 3.1.5], [Higher-Order Functions Using Environments][Video 3.1.6], [Nested Recursive Definitions][Video 3.1.7]   |
-| 13   | 09.12.2020  | Parsing with Combinators. Lambda Calculus  | [Parsing with Combinators][Video 3.2.1], [Recursion as Self-Application][Video 3.2.2], [Church Numerals and Conditionals][Video 3.2.3] |
-| 14   | 16.12.2020  | Review for the exam         |                    |
+| Week | Date        | Topic                                       | Video              |
+| :--  | :--         | :--                                         | :--                |
+| 1    | 22.09.2021  | Intro class                                 | [Introduction][Video 1.1.1], [Elements of programming][Video 1.1.2], [Evaluation strategies and termination][Video 1.1.3], [Value Definitions and Conditionals][Video 1.1.4], [Square Roots with Newtons Methods][Video 1.1.5], [Blocks and lexical scopes][Video 1.1.6], [Tail Recursion][Video 1.1.7] |
+| 2    | 29.09.2021  | Recursion / Function values | [Higher-Order Functions][Video 1.2.1], [Currying][Video 1.2.2], [Finding FixedPoints][Video 1.2.3], [Scala Syntax Summary][Video 1.2.4], [Functions and Data][Video 1.2.5], [Data Abstraction][Video 1.2.6], [Evaluation and Operators][Video 1.2.7] |
+| 3    | 06.09.2021  | Classes                                     | [Class Hierarchies][Video 1.3.1], [How Classes are Organized][Video 1.3.2], [Polymorphism][Video 1.3.3], [Objects Everywhere][Video 1.3.4], [Functions as Objects][Video 1.3.5] |
+| 4    | 13.10.2021  | Classes                                     | [Decomposition][Video 1.4.1], [Pattern Matching][Video 1.4.2], [Lists][Video 1.4.3], [Enums][Video 1.4.4], [Subtyping and Generics][Video 1.4.5], [Variance][Video 1.4.6]                   |
+| 5    | 20.10.2021  | List                                        | [A closer look at lists][Video 1.5.1], [Tuples and generic methods][Video 1.5.2], [Higher order list functions][Video 1.5.3], [Reduction of lists][Video 1.5.4], [Reasoning about lists][Video 1.5.5]                   |
+| 6    | 27.10.2021  | Collection                                  | [Other Collections][Video 1.6.1], [Combinatorial Search and For-Expressions][Video 1.6.2], [Combinatorial Search Example][Video 1.6.3], [Maps][Video 1.6.4], [Putting the Pieces Together][Video 1.6.5] |
+| 7    | 03.11.2021  | Monads                                      | [Recap][Video 2.1.1], [Queries with for][Video 2.1.2], [Translation of for][Video 2.1.3], [Functional Random Generators][Video 2.1.4], [Monads][Video 2.1.5], [Exceptional Monads][Video 2.1.6]                   |
+| 8    | 10.11.2021  | **Midterm exam** / Lazy evaluation          | [Structural Induction on Trees][Video 2.2.1], [Lazy Lists][Video 2.2.2], [Lazy Evaluation][Video 2.2.3], [Infinite Sequences][Video 2.2.4], [Case Study][Video 2.2.5]                   |
+| 9    | 17.11.2021  | Type-directed computation                   | [Contextual abstraction][Video 2.3.1], [Using clauses and given instances][Video 2.3.2], [Type classes][Video 2.3.3], [Abstract algebra and type classes][Video 2.3.4], [Context passing][Video 2.3.5], [Implicit function types][Video 2.3.6]                   |
+| 10   | 24.11.2021  | State                                       | [Functions and state][Video 2.4.1], [Identity and change][Video 2.4.2], [Loops][Video 2.4.3], [Discrete Event Simulation][Video 2.4.4]                  |
+| 11   | 01.12.2021  | Functional Reactive Programming and Constraint Propagation / Symbolic computation |  [Observer Pattern][Video 2.5.1], [Functional Reactive Programming][Video 2.5.2], [A Simple FRP Implementation][Video 2.5.3]                  |
+| 12   | 08.12.2021  | Interpreter I                               | [Interpreter for Arithmetic][Video 3.1.1], [Substitution Interpreter for Recursive Functions][Video 3.1.2], [Environment Instead of Substitutions][Video 3.1.3], [Higher-Order Functions Using Naive Substitutions][Video 3.1.4], [Avoiding Variable Capture][Video 3.1.5], [Higher-Order Functions Using Environments][Video 3.1.6], [Nested Recursive Definitions][Video 3.1.7]   |
+| 13   | 15.12.2021  | Parsing with Combinators / Lambda Calculus  | [Parsing with Combinators][Video 3.2.1], [Recursion as Self-Application][Video 3.2.2], [Church Numerals and Conditionals][Video 3.2.3] |
+| 14   | 22.12.2021  | **Final exam**              |                    |
 
 ## Lab Schedule
 
-| Title                             | Start Date | Discord Session (Fridays 10:15 to 12:00) | Due Date ([AoE](https://en.wikipedia.org/wiki/Anywhere_on_Earth)) |
+| Title                             | Start Date | Session (Fridays 10:15 to 12:00) | Due Date ([AoE](https://en.wikipedia.org/wiki/Anywhere_on_Earth)) |
 | :--                               | :--        | :--                     | :--        |
-| Recursion                         | 16.09.2020 | 18.09.2020              | 27.09.2020 |
-| Functional Sets                   | 23.09.2020 | 25.09.2020              | 01.10.2020 |
-| Object-Oriented Sets              | 30.09.2020 | 02.10.2020              | **11.10.2020** (updated after GitLab outage) |
-| Huffman Coding                    | 07.10.2020 | 09.10.2020 & 16.10.2020 | 22.10.2020 |
-| Anagrams                          | 21.10.2020 | 23.10.2020              | 05.11.2020 |
-| Quickcheck                        | 28.10.2020 | 30.10.2020              | 12.11.2020 |
-| Bloxorz                           | 04.11.2020 | 06.11.2020 & 13.11.2020 | 19.11.2020 |
-| Codecs                            | 18.11.2020 | 20.11.2020 & 27.11.2020 | 03.12.2020 |
-| Interpreter                       | 02.12.2020 | 04.12.2020 & 11.12.2020 | 17.12.2020 |
+| Recursion                         | 22.09.2021 | 24.09.2021              | 03.10.2021 |
+| Functional Sets                   | 29.09.2021 | 01.10.2021              | 07.10.2021 |
+| Object-Oriented Sets              | 06.09.2021 | 08.09.2021              | 14.10.2021 |
+| Huffman Coding                    | 13.10.2021 | 15.10.2021 & 22.10.2021 | 28.10.2021 |
+| Anagrams                          | 27.10.2021 | 29.10.2021              | 11.11.2021 |
+| Quickcheck                        | 03.11.2021 | 05.11.2021              | 18.11.2021 |
+| Bloxorz                           | 10.11.2021 | 12.11.2021 & 19.11.2021 | 25.11.2021 |
+| Codecs                            | 24.11.2021 | 26.11.2021 & 03.12.2021 | 09.12.2021 |
+| Interpreter                       | 08.12.2021 | 10.12.2021 & 17.12.2021 | 24.12.2021 |
 
 Labs are individual assignments where you get to write Scala programs using the concepts learned during lectures.
 Labs are submitted by pushing your code on GitLab, see details in the [grading and submission](labs/grading-and-submission.md) page.
 
 ## Exercise Schedule
 
-| Title                                          | Handout Released | Discord Session (Wednesdays 13:15 to 15:00) | Due Date ([AoE](https://en.wikipedia.org/wiki/Anywhere_on_Earth)) | Solution Released |
-| :--                                            | :--              | :--             | :--              | :--              |
-|  First week tasks                              | -                | 16.09.2020      | -                | -                |
-| Exercise Session 1                             | -                | 23.09.2020      | 27.09.2020       | 28.09.2020       |
-| Exercise Session 2                             | 28.09.2020       | 30.09.2020      | 04.10.2020       | 05.10.2020       |
-| Exercise Session 3                             | 05.10.2020       | 07.10.2020      | 11.10.2020       | 12.10.2020       |
-| Exercise Session 4                             | 12.10.2020       | 14.10.2020      | 19.10.2020       | 20.10.2020       |
-| Exercise Session 5                             | 20.10.2020       | 21.10.2020      | 25.10.2020       | 26.10.2020       |
-| Exercise Session 6                             | 26.10.2020       | 28.10.2020      | 01.11.2020       | 02.11.2020       |
-| Exercise Session 7                             | 09.11.2020       | 11.11.2020      | 15.11.2020       | 16.11.2020       |
-| Exercise Session 8                             | 16.11.2020       | 18.11.2020      | 22.11.2020       | 23.11.2020       |
-| Exercise Session 9                             | 23.11.2020       | 25.11.2020 & 02.12.2020     | **06.12.2020** (updated after late videos)       | 07.12.2020       |
-| Exercise Session 10                            | 30.11.2020       | 02.12.2020 & 09.12.2020      | 13.12.2020       | 14.12.2020       |
+| Title                                          | Handout Released | Session (Wednesdays 13:15 to 15:00) | Due Date ([AoE](https://en.wikipedia.org/wiki/Anywhere_on_Earth)) | Solution Released |
+| :--                                            | :--              | :--                     | :--              | :--              |
+| First week tasks                               | -                | 22.09.2021              | -                | -                |
+| Exercise Session 1                             | -                | 29.09.2021              | 03.10.2021       | 04.10.2021       |
+| Exercise Session 2                             | 04.10.2021       | 06.10.2021              | 10.10.2021       | 11.10.2021       |
+| Exercise Session 3                             | 11.10.2021       | 13.10.2021              | 17.10.2021       | 18.10.2021       |
+| Exercise Session 4                             | 18.10.2021       | 20.10.2021              | 24.10.2021       | 25.10.2021       |
+| Exercise Session 5                             | 25.10.2021       | 27.10.2021              | 31.11.2021       | 01.11.2021       |
+| Exercise Session 6                             | 01.11.2021       | 03.11.2021              | 07.11.2021       | 08.11.2021       |
+| **Midterm exam**                               | -                | 10.11.2021              | -                | -                |
+| Exercise Session 7                             | 15.11.2021       | 17.11.2021              | 21.11.2021       | 22.11.2021       |
+| Exercise Session 8                             | 22.11.2021       | 24.11.2021              | 28.11.2021       | 29.11.2021       |
+| Exercise Session 9                             | 29.11.2021       | 01.12.2021 & 08.12.2021 | 12.12.2021       | 13.12.2021       |
+| Exercise Session 10                            | 06.12.2021       | 08.12.2021 & 15.12.2021 | 19.12.2021       | 20.12.2021       |
+| **Final exam**                                 | -                | 22.12.2021              | -                | -                |
 
 Exercises are pen and paper style questions that will prepare you for the final exam.
 Exercises should be done in groups and submitted via Google Drive, see details in the [Group workspaces](exercises/Group workspaces.md) page.
