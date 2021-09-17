@@ -40,9 +40,9 @@ Setup](labs/tools-setup.md) and [example lab](labs/example-lab.md). To create a
 new empty project to experiment with worksheets, you can clone the following
 repository and run `code . ` inside as usual: [`git clone https://gitlab.epfl.ch/lamp/cs210-worksheets`](https://gitlab.epfl.ch/lamp/cs210-worksheets)
 
-| Week | Date        | Topic                                       | Video              |
+| Week | Date        | Topic                                       | Videos & Slides              |
 | :--  | :--         | :--                                         | :--                |
-| 1    | 22.09.2021  | Intro class                                 | [Introduction][Video 1.1.1], [Elements of programming][Video 1.1.2], [Evaluation strategies and termination][Video 1.1.3], [Value Definitions and Conditionals][Video 1.1.4], [Square Roots with Newtons Methods][Video 1.1.5], [Blocks and lexical scopes][Video 1.1.6], [Tail Recursion][Video 1.1.7] |
+| 1    | 22.09.2021  | Intro class                                 | Introduction ([Video][Video 1.1.1], [Slides][Slides 1.1.1])<br/>Elements of programming ([Video][Video 1.1.2], [Slides][Slides 1.1.2])<br/>Evaluation strategies and termination ([Video][Video 1.1.3], [Slides][Slides 1.1.3])<br/>Value Definitions and Conditionals ([Video][Video 1.1.4], [Slides][Slides 1.1.4])<br/>Square Roots with Newtons Methods ([Video][Video 1.1.5], [Slides][Slides 1.1.5])<br/>Blocks and lexical scopes ([Video][Video 1.1.6], [Slides][Slides 1.1.6])<br/>Tail Recursion ([Video][Video 1.1.7], [Slides][Slides 1.1.7]) |
 | 2    | 29.09.2021  | Recursion / Function values | [Higher-Order Functions][Video 1.2.1], [Currying][Video 1.2.2], [Finding FixedPoints][Video 1.2.3], [Scala Syntax Summary][Video 1.2.4], [Functions and Data][Video 1.2.5], [Data Abstraction][Video 1.2.6], [Evaluation and Operators][Video 1.2.7] |
 | 3    | 06.09.2021  | Classes                                     | [Class Hierarchies][Video 1.3.1], [How Classes are Organized][Video 1.3.2], [Polymorphism][Video 1.3.3], [Objects Everywhere][Video 1.3.4], [Functions as Objects][Video 1.3.5] |
 | 4    | 13.10.2021  | Classes                                     | [Decomposition][Video 1.4.1], [Pattern Matching][Video 1.4.2], [Lists][Video 1.4.3], [Enums][Video 1.4.4], [Subtyping and Generics][Video 1.4.5], [Variance][Video 1.4.6]                   |
@@ -109,12 +109,19 @@ Information about exam organization will be communicated by email a few days bef
 
 
 [Video 1.1.1]: https://tube.switch.ch/videos/7ed71e65
+[Slides 1.1.1]: ./slides/progfun1-1-1.pdf
 [Video 1.1.2]: https://tube.switch.ch/videos/eefaaa33
+[Slides 1.1.2]: ./slides/progfun1-1-2.pdf
 [Video 1.1.3]: https://tube.switch.ch/videos/7ec55c9c
+[Slides 1.1.3]: ./slides/progfun1-1-3.pdf
 [Video 1.1.4]: https://tube.switch.ch/videos/f8abe6bf
+[Slides 1.1.4]: ./slides/progfun1-1-4.pdf
 [Video 1.1.5]: https://tube.switch.ch/videos/1f8d3205
+[Slides 1.1.5]: ./slides/progfun1-1-5.pdf
 [Video 1.1.6]: https://tube.switch.ch/videos/9274e0f4
+[Slides 1.1.6]: ./slides/progfun1-1-6.pdf
 [Video 1.1.7]: https://tube.switch.ch/videos/1843caa3
+[Slides 1.1.7]: ./slides/progfun1-1-7.pdf
 
 [Video 1.2.1]: https://tube.switch.ch/videos/646cfe4f
 [Video 1.2.2]: https://tube.switch.ch/videos/9e573d2f
