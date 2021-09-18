@@ -17,7 +17,7 @@ git clone -b example git@gitlab.epfl.ch:lamp/students-repositories-fall-2021/cs2
 ```
 
 **If this command fails, make sure you've [logged into
-gitlab](https://gitlab.epfl.ch/users/sign_in) and [registered on the google sheet](https://docs.google.com/spreadsheets/d/12KvfD_jN5AcApmWhCz7xZmln48fctQOa984RPWrqRkY/edit#gid=0),
+gitlab](https://gitlab.epfl.ch/users/sign_in) and registered on the google sheet (link coming soon),
 then wait a few minutes.
 If it still doesn't work it's likely that you didn't correctly upload your ssh
 key to gitlab, look at the last part of the [Tools Setup](tools-setup.md) page again.**
