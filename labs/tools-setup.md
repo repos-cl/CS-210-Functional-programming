@@ -13,7 +13,7 @@ work properly. Please create a new user with a username containing only letters.
 # Step 1: Create an account on gitlab.epfl.ch
 
 If you haven't already [log into gitlab](https://gitlab.epfl.ch/users/sign_in)
-and fill in this google sheet (link coming soon) with your GASPAR and SCIPER number to initialize your GitLab repository for the course. Do this as soon as possible because it will take some time between the account creation and the lab submission system working for your account.
+and fill in [this table](https://docs.google.com/spreadsheets/d/12KvfD_jN5AcApmWhCz7xZmln48fctQOa984RPWrqRkY/edit#gid=0) with your GASPAR and SCIPER number to initialize your GitLab repository for the course. Do this as soon as possible because it will take some time between the account creation and the lab submission system working for your account.
 
 ## Step 2: Installing the Java Development Kit (JDK) and sbt via coursier
 
