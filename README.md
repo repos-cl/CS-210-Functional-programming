@@ -130,7 +130,7 @@ Information about exam organization will be communicated by email a few days bef
 [Video 1.2.4]: https://tube.switch.ch/videos/ddcbb43f
 [Video 1.2.5]: https://tube.switch.ch/videos/dec623bc
 [Video 1.2.6]: https://tube.switch.ch/videos/6e8643cf
-[Video 1.2.7]: https://tube.switch.ch/videos/dc82606b
+[Video 1.2.7]: https://tube.switch.ch/videos/p6uOZxpZO0
 [Slides 1.2.1]: ./slides/progfun1-2-1.pdf
 [Slides 1.2.2]: ./slides/progfun1-2-2.pdf
 [Slides 1.2.3]: ./slides/progfun1-2-3.pdf
@@ -141,7 +141,7 @@ Information about exam organization will be communicated by email a few days bef
 
 [Video 1.3.1]: https://tube.switch.ch/videos/56c88e00
 [Video 1.3.2]: https://tube.switch.ch/videos/1c969056
-[Video 1.3.3]: https://tube.switch.ch/videos/d3a7aff4
+[Video 1.3.3]: https://tube.switch.ch/videos/PE4EZHTXL1
 [Video 1.3.4]: https://tube.switch.ch/videos/03486c5a
 [Video 1.3.5]: https://tube.switch.ch/videos/82b0e104
 [Slides 1.3.1]: ./slides/progfun1-2-1.pdf
@@ -153,7 +153,7 @@ Information about exam organization will be communicated by email a few days bef
 [Video 1.4.1]: https://tube.switch.ch/videos/f5879da4
 [Video 1.4.2]: https://tube.switch.ch/videos/e7df77e5
 [Video 1.4.3]: https://tube.switch.ch/videos/978832a8
-[Video 1.4.4]: https://tube.switch.ch/videos/ea910999
+[Video 1.4.4]: https://tube.switch.ch/videos/xmEdj2V0Xh
 [Video 1.4.5]: https://tube.switch.ch/videos/9a844297
 [Video 1.4.6]: https://tube.switch.ch/videos/35c4e417
 [Slides 1.4.1]: ./slides/progfun1-4-1.pdf
@@ -190,7 +190,7 @@ Information about exam organization will be communicated by email a few days bef
 [Video 2.1.2]: https://tube.switch.ch/videos/935b0da5
 [Video 2.1.3]: https://tube.switch.ch/videos/2ac4c232
 [Video 2.1.4]: https://tube.switch.ch/videos/f9c5677b
-[Video 2.1.5]: https://tube.switch.ch/videos/16b5d240
+[Video 2.1.5]: https://tube.switch.ch/videos/DJmNHpUHba
 [Video 2.1.6]: https://tube.switch.ch/videos/fdfb0609
 [Slides 2.1.1]: ./slides/progfun2-1-1.pdf
 [Slides 2.1.2]: ./slides/progfun2-1-2.pdf
@@ -211,11 +211,11 @@ Information about exam organization will be communicated by email a few days bef
 [Slides 2.2.5]: ./slides/progfun2-2-5.pdf
 
 [Video 2.3.1]: https://tube.switch.ch/videos/d5df9a21
-[Video 2.3.2]: https://tube.switch.ch/videos/cef63f8a
-[Video 2.3.3]: https://tube.switch.ch/videos/8c7b6f4e
-[Video 2.3.4]: https://tube.switch.ch/videos/a65a3022
-[Video 2.3.5]: https://tube.switch.ch/videos/ee6fdc37
-[Video 2.3.6]: https://tube.switch.ch/videos/cab2248b
+[Video 2.3.2]: https://tube.switch.ch/videos/xRHmz1nTpz
+[Video 2.3.3]: https://tube.switch.ch/videos/XNgbIOT2Yb
+[Video 2.3.4]: https://tube.switch.ch/videos/FnmJTs1Vqu
+[Video 2.3.5]: https://tube.switch.ch/videos/pWXI0T9FtX
+[Video 2.3.6]: https://tube.switch.ch/videos/NKZ0IVR9Yi
 [Slides 2.3.1]: ./slides/progfun2-3-1.pdf
 [Slides 2.3.2]: ./slides/progfun2-3-2.pdf
 [Slides 2.3.3]: ./slides/progfun2-3-3.pdf
@@ -225,8 +225,8 @@ Information about exam organization will be communicated by email a few days bef
 
 [Video 2.4.1]: https://tube.switch.ch/videos/f32bc013
 [Video 2.4.2]: https://tube.switch.ch/videos/7bf009ce
-[Video 2.4.3]: https://tube.switch.ch/videos/a2a7b6fb
-[Video 2.4.4]: https://tube.switch.ch/videos/95c82b17
+[Video 2.4.3]: https://tube.switch.ch/videos/zEyrIXFFPV
+[Video 2.4.4]: https://tube.switch.ch/videos/CvuKzoNjRg
 [Slides 2.4.1]: ./slides/progfun2-4-1.pdf
 [Slides 2.4.2]: ./slides/progfun2-4-2.pdf
 [Slides 2.4.3]: ./slides/progfun2-4-3.pdf
