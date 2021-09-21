@@ -64,4 +64,4 @@ grade:
     - cd /grader
     - /grader/grade
     - cat /shared/txtFeedback.txt
-    - grep -q FAILED /shared/txtFeedback.txt
+    - grep -q congratulations /shared/txtFeedback.txt
