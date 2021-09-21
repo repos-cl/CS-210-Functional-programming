@@ -63,6 +63,5 @@ grade:
   script:
     - cd /grader
     - /grader/grade
-    - GRADER_EXIT_CODE=$?
     - cat /shared/txtFeedback.txt
-    - $GRADER_EXIT_CODE
+    - grep -q FAILED /shared/txtFeedback.txt
