@@ -63,3 +63,4 @@ grade:
   script:
     - cd /grader
     - /grader/grade
+    - cat /shared/txtFeedback.txt
