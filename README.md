@@ -33,7 +33,7 @@ The grading of the course is divided between labs (30%), a midterm exam (20%) an
 
 <!-- date -d "30/09/2019 364 days" +"%d.%m.%Y" -->
 
-Lectures are prerecorded and published below.
+Lectures are prerecorded and published below. This class is given in a [_flipped classrom_](https://en.wikipedia.org/wiki/Flipped_classroom) format, meaning that you should watch the videos by yourseulf _before_ the indicated date. You will then have the occasion to test and perfect your knowledge during the [exercises (recitation sessions)](#user-content-exercise-recitation-session-schedule) on Wednesday afternoons, and [labs](user-content-lab-schedule) on Friday mornings.
 
 **Note**: In some lectures, worksheets are used to present code. To learn how to
 use worksheets yourselves, please follow the [Tools
