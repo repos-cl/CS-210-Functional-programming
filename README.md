@@ -12,7 +12,7 @@ We will use GitLab's issue tracker as a discussion forum. Feel free to [open an 
 1. [Join the Discord](https://discord.gg/UqzqX2wTWW).
 2. [Log into EPFL's GitLab](https://gitlab.epfl.ch/users/sign_in).
 3. Fill in [this table](https://docs.google.com/spreadsheets/d/12KvfD_jN5AcApmWhCz7xZmln48fctQOa984RPWrqRkY/edit#gid=0) with your GASPAR and SCIPER number to initialize your GitLab repository for the course (login with your `@epfl.ch` address to have write access).
-4. Choose a group for the exercises by answering [this Doodle](https://doodle.com/poll/4k7gkxiv9hdxzivk).
+4. Choose a group for the exercises (recitation sessions) by answering [this Doodle](https://doodle.com/poll/4k7gkxiv9hdxzivk).
 5. Follow the [Tools Setup](labs/tools-setup.md) page.
 6. Do the [example lab](labs/example-lab.md).
 7. Do the [first graded lab](labs/lab-1.md).
@@ -77,9 +77,9 @@ Lab sessions take place on Fridays from 10:15 to 12:00.
 Labs are individual assignments where you get to write Scala programs using the concepts learned during lectures.
 Labs are submitted by pushing your code on GitLab, see details in the [grading and submission](labs/grading-and-submission.md) page.
 
-## Exercise Schedule
+## Exercise (Recitation Session) Schedule
 
-Exercise sessions take place on Wednesdays from 13:15 to 15:00.
+Exercises (aka recitation sessions) take place on Wednesdays from 13:15 to 15:00.
 
 | Title                                          | Handout Released | Session (Wednesdays 13:15 to 15:00) | Solution Released |
 | :--                                            | :--              | :--                     | :--              |
