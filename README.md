@@ -58,25 +58,6 @@ repository and run `code . ` inside as usual: [`git clone https://gitlab.epfl.ch
 | 13   | 15.12.2021  | Parsing with Combinators / Lambda Calculus  | Parsing with Combinators ([Video][Video 3.2.1])<br/>Recursion as Self-Application ([Video][Video 3.2.2])<br/>Church Numerals and Conditionals ([Video][Video 3.2.3]) |
 | 14   | 22.12.2021  | **Final exam**                              | -        |
 
-## Lab Schedule
-
-Lab sessions take place on Fridays from 10:15 to 12:00.
-
-| Title                             | Start Date | Session (Fridays 10:15 to 12:00) | Due Date ([AoE](https://en.wikipedia.org/wiki/Anywhere_on_Earth)) |
-| :--                               | :--        | :--                     | :--        |
-| Recursion                         | 22.09.2021 | 24.09.2021              | 03.10.2021 |
-| Functional Sets                   | 29.09.2021 | 01.10.2021              | 07.10.2021 |
-| Object-Oriented Sets              | 06.09.2021 | 08.09.2021              | 14.10.2021 |
-| Huffman Coding                    | 13.10.2021 | 15.10.2021 & 22.10.2021 | 28.10.2021 |
-| Anagrams                          | 27.10.2021 | 29.10.2021              | 11.11.2021 |
-| Quickcheck                        | 03.11.2021 | 05.11.2021              | 18.11.2021 |
-| Bloxorz                           | 10.11.2021 | 12.11.2021 & 19.11.2021 | 25.11.2021 |
-| Codecs                            | 24.11.2021 | 26.11.2021 & 03.12.2021 | 09.12.2021 |
-| Interpreter                       | 08.12.2021 | 10.12.2021 & 17.12.2021 | 23.12.2021 |
-
-Labs are individual assignments where you get to write Scala programs using the concepts learned during lectures.
-Labs are submitted by pushing your code on GitLab, see details in the [grading and submission](labs/grading-and-submission.md) page.
-
 ## Exercise (Recitation Session) Schedule
 
 Exercises (aka recitation sessions) take place on Wednesdays from 13:15 to 15:00.
@@ -99,6 +80,25 @@ Exercises (aka recitation sessions) take place on Wednesdays from 13:15 to 15:00
 
 Exercises are pen and paper style questions that will prepare you for the final exam.
 Exercises should be done in groups.
+
+## Lab Schedule
+
+Lab sessions take place on Fridays from 10:15 to 12:00.
+
+| Title                             | Start Date | Session (Fridays 10:15 to 12:00) | Due Date ([AoE](https://en.wikipedia.org/wiki/Anywhere_on_Earth)) |
+| :--                               | :--        | :--                     | :--        |
+| Recursion                         | 22.09.2021 | 24.09.2021              | 03.10.2021 |
+| Functional Sets                   | 29.09.2021 | 01.10.2021              | 07.10.2021 |
+| Object-Oriented Sets              | 06.09.2021 | 08.09.2021              | 14.10.2021 |
+| Huffman Coding                    | 13.10.2021 | 15.10.2021 & 22.10.2021 | 28.10.2021 |
+| Anagrams                          | 27.10.2021 | 29.10.2021              | 11.11.2021 |
+| Quickcheck                        | 03.11.2021 | 05.11.2021              | 18.11.2021 |
+| Bloxorz                           | 10.11.2021 | 12.11.2021 & 19.11.2021 | 25.11.2021 |
+| Codecs                            | 24.11.2021 | 26.11.2021 & 03.12.2021 | 09.12.2021 |
+| Interpreter                       | 08.12.2021 | 10.12.2021 & 17.12.2021 | 23.12.2021 |
+
+Labs are individual assignments where you get to write Scala programs using the concepts learned during lectures.
+Labs are submitted by pushing your code on GitLab, see details in the [grading and submission](labs/grading-and-submission.md) page.
 
 ## Exam Schedule
 
