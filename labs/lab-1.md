@@ -50,7 +50,7 @@ function that computes the elements of Pascal's triangle by means of a
 recursive process.
 
 Do this exercise by implementing the `pascal` function in
-`Main.scala`, which takes a column `c` and a row `r`, counting from
+`RecFun.scala`, which takes a column `c` and a row `r`, counting from
 `0` and returns the number at that spot in the triangle. For example,
 `pascal(0,2)=1`, `pascal(1,2)=2` and `pascal(1,3)=3`.
 
@@ -78,7 +78,7 @@ The last example shows that it's not enough to verify that a string
 contains the same number of opening and closing parentheses.
 
 Do this exercise by implementing the `balance` function in
-`Main.scala`. Its signature is as follows:
+`RecFun.scala`. Its signature is as follows:
 
 ```scala
 def balance(chars: List[Char]): Boolean
@@ -107,7 +107,7 @@ example, there are 3 ways to give change for 4 if you have coins with
 denomiation 1 and 2: 1+1+1+1, 1+1+2, 2+2.
 
 Do this exercise by implementing the `countChange` function in
-`Main.scala`. This function takes an amount to change, and a list of
+`RecFun.scala`. This function takes an amount to change, and a list of
 unique denominations for the coins. Its signature is as follows:
 
 ```scala
