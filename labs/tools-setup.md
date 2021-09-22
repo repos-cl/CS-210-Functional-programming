@@ -20,10 +20,10 @@ and fill in [this table](https://docs.google.com/spreadsheets/d/12KvfD_jN5AcApmW
 We will use coursier to install the correct version of
 Java as well as the sbt build tool:
 
-### On Linux
+### On Linux and macOS
 
 ```shell
-curl -fLo cs https://git.io/coursier-cli-linux
+curl -fLo cs https://git.io/coursier-cli-"$(uname | tr LD ld)"
 ```
 ```shell
 chmod +x cs
@@ -33,25 +33,6 @@ chmod +x cs
 ```
 
 Please reboot after this point.
-
-### On macOS
-
-First, install the Homebrew package manager:
-```shell
-/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
-```
-Use Homebrew to install coursier:
-```scala
-brew install coursier/formulas/coursier
-```
-```shell
-[ -f ~/.bash_profile ] && sudo chmod 0666 ~/.bash_profile
-```
-```shell
-cs setup -y --jvm 8 --apps sbt
-```
-
-Please close this terminal and open a new one after this point.
 
 ### On Windows
 
@@ -112,6 +93,14 @@ sudo apt update && sudo apt install git
 ```
 
 ### On macOS
+
+First, install the Homebrew package manager:
+
+```shell
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+```
+
+Use Homebrew to install git:
 
 ```shell
 brew install git
