@@ -170,7 +170,7 @@ Follow the instructions under "Enable OpenSSH Client in Windows 10" on
 
 ### Step 8.2: Generating the key pair
 
-Please follow [this tutorial](https://docs.github.com/en/authentication/connecting-to-github-with-ssh/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent) to generate a new SSH key and add it to the ssh-agent (except the last step: you should instead at the key to Gitlab, as described below). This [video](https://youtu.be/_RsP81Et12s?t=67) (from 1:07 to 4:05) might also help. 
+Please follow [this tutorial](https://docs.github.com/en/authentication/connecting-to-github-with-ssh/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent) to generate a new SSH key and add it to the ssh-agent (except the last step: you should instead add the key to Gitlab as described below). This [video](https://youtu.be/_RsP81Et12s?t=67) (from 1:07 to 4:05) might also help. 
 
 ### Step 8.3: Adding your public key on Gitlab
 
