@@ -170,15 +170,9 @@ Follow the instructions under "Enable OpenSSH Client in Windows 10" on
 
 ### Step 8.2: Generating the key pair
 
-Open a **new** terminal and run:
+Please follow [this tutorial](https://docs.github.com/en/authentication/connecting-to-github-with-ssh/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent) to generate a new SSH key and add it to the ssh-agent (except the last step: you should instead at the key to Gitlab, as described below). This [video](https://youtu.be/_RsP81Et12s?t=67) (from 1:07 to 4:05) might also help. 
 
-```shell
-ssh-keygen -t rsa -b 4096 -C "youremail@example.com"
-```
-
-The command will then ask for a location, which you can leave as the default. It will then also ask for a passphrase to encrypt your private key, which you may leave empty. If you don't, make sure to remember your passphrase!
-
-### Adding your public key on Gitlab
+### Step 8.3: Adding your public key on Gitlab
 
 To be able to push your code, you'll need to add the public part of your key on Gitlab:
 - Go to [gitlab.epfl.ch](https://gitlab.epfl.ch), log in with your EPFL account
