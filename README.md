@@ -83,7 +83,7 @@ Exercises should be done in groups.
 
 ## Lab Schedule
 
-Lab sessions take place on Fridays from 10:15 to 12:00.
+Lab sessions take place on Fridays from 10:15 to 12:00 in CO021 / ELA1 / ELD120 / DIA005 / DIA004.
 
 | Title                             | Start Date | Session (Fridays 10:15 to 12:00) | Due Date ([AoE](https://en.wikipedia.org/wiki/Anywhere_on_Earth)) |
 | :--                               | :--        | :--                     | :--        |
