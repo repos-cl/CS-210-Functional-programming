@@ -89,7 +89,7 @@ Lab sessions take place on Fridays from 10:15 to 12:00 in CO021 / ELA1 / ELD120 
 | :--                               | :--        | :--                     | :--        |
 | Recursion                         | 22.09.2021 | 24.09.2021              | 03.10.2021 |
 | Functional Sets                   | 29.09.2021 | 01.10.2021              | 07.10.2021 |
-| Object-Oriented Sets              | 06.09.2021 | 08.09.2021              | 14.10.2021 |
+| Object-Oriented Sets              | 06.10.2021 | 08.10.2021              | 14.10.2021 |
 | Huffman Coding                    | 13.10.2021 | 15.10.2021 & 22.10.2021 | 28.10.2021 |
 | Anagrams                          | 27.10.2021 | 29.10.2021              | 11.11.2021 |
 | Quickcheck                        | 03.11.2021 | 05.11.2021              | 18.11.2021 |
