@@ -65,7 +65,7 @@ Exercises (aka recitation sessions) take place on Wednesdays from 13:15 to 15:00
 | Title                                          | Handout Released | Session (Wednesdays 13:15 to 15:00) | Solution Released |
 | :--                                            | :--              | :--                     | :--              |
 | First week tasks                               | -                | 22.09.2021              | -                |
-| Exercise Session 1                             | -                | 29.09.2021              | 04.10.2021       |
+| Exercise Session 1                             | 27.09.2021       | 29.09.2021              | 04.10.2021       |
 | Exercise Session 2                             | 04.10.2021       | 06.10.2021              | 11.10.2021       |
 | Exercise Session 3                             | 11.10.2021       | 13.10.2021              | 18.10.2021       |
 | Exercise Session 4                             | 18.10.2021       | 20.10.2021              | 25.10.2021       |
