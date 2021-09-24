@@ -127,9 +127,12 @@ See [https://code.visualstudio.com/docs/setup/linux](https://code.visualstudio.c
 
 ### On macOS
 
+If you don't already have Code installed:
 ```shell
 brew install --cask visual-studio-code
 ```
+If it was already installed before, you will need to [enable launching it from the
+command line](https://code.visualstudio.com/docs/setup/mac#_launching-from-the-command-line)
 
 ### On Windows
 
