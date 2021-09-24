@@ -36,8 +36,8 @@ Please reboot after this point.
 
 ### On Windows
 
-Download and install the [Visual C++ 2010 SP1 Redistributable
-Package](https://www.microsoft.com/en-us/download/details.aspx?id=26999) (click
+Download and install both the [Visual C++ 2010 SP1 Redistributable
+Package](https://www.microsoft.com/en-us/download/details.aspx?id=26999) and [Visual C++ 2015 Redistributable Update](https://www.microsoft.com/en-us/download/details.aspx?id=52685) (click
 on "Download" then select "vcredist_x64.exe" and click "Next").
 
 Open `cmd.exe` (and not powershell)
