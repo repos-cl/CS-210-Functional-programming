@@ -60,7 +60,7 @@ repository and run `code . ` inside as usual: [`git clone https://gitlab.epfl.ch
 
 ## Exercise (Recitation Session) Schedule
 
-Exercises (aka recitation sessions) take place on Wednesdays from 13:15 to 15:00.
+Exercises (aka recitation sessions) take place on Wednesdays from 13:15 to 15:00 in CO1, CO015, CO016, CO017, DIA004 and DIA005. Please go to the room that you registered to on Doodle. If you have forgotten which room you chose, please ask a TA on Discord (we cannot publish the whole list for privacy reasons).
 
 | Title                                          | Handout Released | Session (Wednesdays 13:15 to 15:00) | Solution Released |
 | :--                                            | :--              | :--                     | :--              |
@@ -83,7 +83,7 @@ Exercises should be done in groups.
 
 ## Lab Schedule
 
-Lab sessions take place on Fridays from 10:15 to 12:00 in CO021 / ELA1 / ELD120 / DIA005 / DIA004.
+Lab sessions take place on Fridays from 10:15 to 12:00 in CO021, ELA1, ELD120, DIA005 and DIA004.
 
 | Title                             | Start Date | Session (Fridays 10:15 to 12:00) | Due Date ([AoE](https://en.wikipedia.org/wiki/Anywhere_on_Earth)) |
 | :--                               | :--        | :--                     | :--        |
