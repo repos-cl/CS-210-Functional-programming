@@ -15,7 +15,7 @@ code --force --install-extension scalameta.metals
 You can use the following commands to make a fresh clone of your repository:
 
 ```shell
-git clone -b funsets git@gitlab.epfl.ch:lamp/students-repositories-fall-2020/cs210-GASPAR.git cs210-funsets
+git clone -b funsets git@gitlab.epfl.ch:lamp/students-repositories-fall-2021/cs210-GASPAR.git cs210-funsets
 cd cs210-funsets
 ```
 
