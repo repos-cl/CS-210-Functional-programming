@@ -144,7 +144,7 @@ Information about exam organization will be communicated by email a few days bef
 [Video 1.3.3]: https://tube.switch.ch/videos/PE4EZHTXL1
 [Video 1.3.4]: https://tube.switch.ch/videos/9081e1da
 [Video 1.3.5]: https://tube.switch.ch/videos/e409b899
-[Slides 1.3.1]: ./slides/progfun1-2-1.pdf
+[Slides 1.3.1]: ./slides/progfun1-3-1.pdf
 [Slides 1.3.2]: ./slides/progfun1-3-2.pdf
 [Slides 1.3.3]: ./slides/progfun1-3-3.pdf
 [Slides 1.3.4]: ./slides/progfun1-3-4.pdf
