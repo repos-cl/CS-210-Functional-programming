@@ -10,9 +10,9 @@ def fastExp(base: Int, exp: Int): Int =
 
   @tailrec
   def go(base: Int, exp: Int, acc: Int): Int =
-    if (exp == 0)
+    if exp == 0 then
       acc
-    else if ((exp % 2) != 0)
+    else if (exp % 2) != 0 then
       go(base, exp - 1, base * acc)
     else
       go(base * base, exp / 2, acc)
@@ -30,7 +30,7 @@ def fibonacci(n: Int): Int =
 
   @tailrec
   def go(k: Int, previous: Int, current: Int): Int =
-    if (k == n) current
+    if k == n then current
     else go(k + 1, current, previous + current)
 
   if n == 0 then 0 else go(1, 0, 1)
