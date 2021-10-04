@@ -36,15 +36,15 @@ def fastExp(base: Int, exp: Int): Int =
   require(exp >= 0)
 
   @tailrec
-  def go(base: Int, exp: Int, acc: Int): Int =
+  def loop(base: Int, exp: Int, acc: Int): Int =
     if exp == 0 then
       acc
     else if (exp % 2) != 0 then
-      go(base, exp - 1, base * acc)
+      loop(base, exp - 1, base * acc)
     else
-      go(base * base, exp / 2, acc)
+      loop(base * base, exp / 2, acc)
 
-  go(base, exp, 1)
+  loop(base, exp, 1)
 ```
 
 ## Question 4: Tail recursive Fibonacci
@@ -56,9 +56,9 @@ def fibonacci(n: Int): Int =
   require(n >= 0)
 
   @tailrec
-  def go(k: Int, previous: Int, current: Int): Int =
+  def loop(k: Int, previous: Int, current: Int): Int =
     if k == n then current
-    else go(k + 1, current, previous + current)
+    else loop(k + 1, current, previous + current)
 
-  if n == 0 then 0 else go(1, 0, 1)
+  if n == 0 then 0 else loop(1, 0, 1)
 ```
