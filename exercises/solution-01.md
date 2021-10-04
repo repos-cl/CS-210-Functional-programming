@@ -1,5 +1,32 @@
 # Exercise Session 1, Solutions
 
+## Question 1: Factorial
+
+```scala
+import scala.annotation.tailrec
+
+def factorial(n: Int) =
+  @tailrec
+  def loop(n: Int, acc: Int): Int =
+    if n == 0 then acc
+    else loop(n - 1, acc * n)
+  loop(n, 1)
+```
+
+## Question 2: Sum of elements on a list
+
+```scala
+import scala.annotation.tailrec
+
+def sumList(ls: List[Int]) =
+  @tailrec
+  def loop(ls: List[Int], acc: Int): Int =
+    if ls.isEmpty then acc
+    else loop(ls.tail, acc + ls.head)
+  
+  loop(ls, 0)
+```
+
 ## Question 3: Fast exponentiation
 
 ```scala
