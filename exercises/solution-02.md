@@ -59,10 +59,18 @@ import scala.annotation.tailrec
 
 def fixedPoint(f: Int => Int): Int => Int =
   @tailrec
-  def rec(x: Int): Int =
-    val y = f(x)
-    if x == y then x else rec(y)
-  rec
+  def loop(guess: Int): Int =
+    val image: Int = f(guess)
+    if image == guess then guess else loop(image)
+  loop
+```
+
+Or alternatively, using currying:
+
+```scala
+def fixedPointCurry(f: Int => Int)(guess: Int): Int =
+  val image: Int = f(guess)
+  if image == guess then guess else fixedPoint(f)(image)
 ```
 
 - `fixedPoint(x => x/2)(4)` returns `0`.
