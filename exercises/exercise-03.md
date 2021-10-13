@@ -1,24 +1,24 @@
 # Exercise Session 3
 
-This week we will play with genericity and OO concepts.
+This week we will play with genericity and object-oriented programming concepts.
 
-A binary search tree is a binary tree such that, for a node, all elements in the left sub-tree are smaller than the element at the node, and all elements in the right sub-tree are greater than the element at the node. Therefore, binary search trees do not contain duplicate elements.
+A [_binary search_](https://en.wikipedia.org/wiki/Binary_search_tree) tree is a binary tree such that, for a node, all elements in the left sub-tree are smaller than the element at the node, and all elements in the right sub-tree are greater than the element at the node. Therefore, binary search trees do not contain duplicate elements.
 
 Because we want to build a generic tree structure, we also need the notion of a comparator, or a less-than-or-equal operator (denoted `leq`) for two generic elements which satisfies the following properties:
 
-- Transitivity:   `leq(a, b) && leq(b, c) => leq(a, c)`
+- Transitivity:   `leq(a, b) && leq(b, c) => leq(a, c)`.
 - Reflexivity:    `leq(a, a)` is `true`.
-- Anti-symmetry:  `leq(a, b) && leq(b, a) => a == b`
-- Totality:       either `leq(a, b)` or `leq(b, a)` is `true` (or both)
+- Anti-symmetry:  `leq(a, b) && leq(b, a) => a == b`.
+- Totality:       either `leq(a, b)` or `leq(b, a)` is `true` (or both).
 
-Note that the above defines a total order.
+Note that the above defines a [_total order_](https://en.wikipedia.org/wiki/Total_order).
 
 Here is the structure we will be using for implementing these trees:
 
 ```scala
-trait Tree[T] { ... }
-case class EmptyTree[T](leq: (T, T) => Boolean) extends Tree[T] { ... }
-case class Node[T](left: Tree[T], elem: T, right: Tree[T], leq: (T, T) => Boolean) extends Tree[T] { ... }
+trait Tree[T]
+case class EmptyTree[T](leq: (T, T) => Boolean) extends Tree[T]
+case class Node[T](left: Tree[T], elem: T, right: Tree[T], leq: (T, T) => Boolean) extends Tree[T]
 ```
 
 For consistency, all subtrees must contain the same leq parameter.
@@ -38,10 +38,7 @@ Given only `leq` for comparison, how can you test for equality? How about strict
 Define the size method on `Tree[T]`, which returns its size, i.e. the number of Nodes in the tree.
 
 ```scala
-trait Tree[T] {
-  def size: Int
-  ...
-}
+def size: Int
 ```
 
 Implement it in two ways:
@@ -78,3 +75,7 @@ def sortedList[T](leq: (T, T) => Boolean, ls: List[T]): List[T] = ???
 ```
 
 _Hint_: you might need to define some auxiliary functions.
+
+## Question 6
+
+If all methods are implemented using pattern matching (i.e. there are no methods implemented in subclasses), can you represent your tree type as an _ADT_ (algebraic data type) using the `enum` syntax?
