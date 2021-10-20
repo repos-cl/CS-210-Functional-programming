@@ -1,13 +1,12 @@
 # Exercise Session 4
 
-Variance and Pattern Matching
-
-This week, we will work on the idea of variance, and on pattern matching. Recall that
-
-- Lists are covariant in their only type parameter.
-- Functions are contravariant in the argument, and covariant in the result.
+This week, we will work on the idea of variance, and on pattern matching.
 
 ## Question 1
+
+Recall that
+- Lists are covariant in their only type parameter.
+- Functions are contravariant in the argument, and covariant in the result.
 
 Consider the following hierarchies:
 
