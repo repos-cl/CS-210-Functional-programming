@@ -42,10 +42,10 @@ The following data type represents simple arithmetic expressions:
 
 ```scala
 enum Expr:
-  class Number(x: Int)
-  class Var(name: String)
-  class Sum(e1: Expr, e2: Expr)
-  class Prod(e1: Expr, e2: Expr)
+  case Number(x: Int)
+  case Var(name: String)
+  case Sum(e1: Expr, e2: Expr)
+  case Prod(e1: Expr, e2: Expr)
 ```
 
 Define a function `deriv(expr: Expr, v: String): Expr` returning the expression that is the partial derivative of `expr` with respect to the variable `v`.
