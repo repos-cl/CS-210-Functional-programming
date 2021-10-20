@@ -39,14 +39,14 @@ Fill in the subtyping relation between the types below. Bear in mind that it mig
 
 ## Question 2
 
-The following data types represent simple arithmetic expressions:
+The following data type represents simple arithmetic expressions:
 
 ```scala
-abstract class Expr
-case class Number(x: Int) extends Expr
-case class Var(name: String) extends Expr
-case class Sum(e1: Expr, e2: Expr) extends Expr
-case class Prod(e1: Expr, e2: Expr) extends Expr
+enum Expr:
+  class Number(x: Int)
+  class Var(name: String)
+  class Sum(e1: Expr, e2: Expr)
+  class Prod(e1: Expr, e2: Expr)
 ```
 
 Define a function `deriv(expr: Expr, v: String): Expr` returning the expression that is the partial derivative of `expr` with respect to the variable `v`.
