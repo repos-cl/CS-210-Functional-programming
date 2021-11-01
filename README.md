@@ -102,11 +102,15 @@ Labs are submitted by pushing your code on GitLab, see details in the [grading a
 
 ## Exam Schedule
 
-The midterm exam will be on 10.11.2021.
+- The midterm will be exercise-like, pen and paper, in-person, will last 1 hour and 45 minutes, and will take place on the __10th of November 2021 between 13:15 and 15:00__. The doors will open at 13:00 so that you have time to seat and prepare yourself before the exam starts.
 
-The final exam will be on 22.12.2021.
+  We might ask you about anything that you have seen in the first 6 weeks of this course, including the [recap](https://gitlab.epfl.ch/lamp/cs210/-/blob/master/slides/progfun2-1-1.pdf) at the beginning of week 7.
 
-Information about exam organization will be communicated by email a few days before the exam.
+  We will tell you to which room you are assigned and give you more information by email a few days before the exam.
+
+  Please don't forget to bring your Camipro. You will also need a COVID certificate or a temporary COVID pass to attend the exam. [You can get a free temporary COVID pass by getting a salivary test here at EPFL](https://www.epfl.ch/campus/security-safety/en/health/coronavirus-covid19/covid-19-testing-center-epfl/).
+
+- The final exam will be on 22.12.2021.
 
 
 [Video 1.1.1]: https://tube.switch.ch/videos/7ed71e65
