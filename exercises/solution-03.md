@@ -4,7 +4,7 @@
 
 ```scala
 def eq[T](a: T, b: T, leq: (T, T) => Boolean) = leq(a, b) && leq(b, a)
-def le[T](a: T, b: T, leq: (T, T) => Boolean) = leq(a, b) && !leq(b, a)
+def le[T](a: T, b: T, leq: (T, T) => Boolean) = !leq(b, a)
 ```
 
 ## Question 2
