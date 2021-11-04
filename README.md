@@ -102,9 +102,11 @@ Labs are submitted by pushing your code on GitLab, see details in the [grading a
 
 ## Exam Schedule
 
-- The midterm will be exercise-like, pen and paper, in-person, will last 1 hour and 45 minutes, and will take place on the __10th of November 2021 between 13:15 and 15:00__. The doors will open at 13:00 so that you have time to seat and prepare yourself before the exam starts.
+- The midterm will be exercise-like, pen and paper, in-person, will last 1 hour and 45 minutes, and will take place on the __10th of November 2021 between 13:15 and 15:00__. Please wait by the door from 13:00, and we will open as soon as the rooms are ready so that you have time to seat and prepare yourself before the exam starts.
 
   We might ask you about anything that you have seen in the first 6 weeks of this course, including the [recap](https://gitlab.epfl.ch/lamp/cs210/-/blob/master/slides/progfun2-1-1.pdf) at the beginning of week 7.
+
+  No other material than a pen is allowed. In particular, no notes and no electronic equipment of any kind (computers, phones, smart watches, etc.).
 
   We will tell you to which room you are assigned and give you more information by email a few days before the exam.
 
