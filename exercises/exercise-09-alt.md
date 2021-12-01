@@ -61,4 +61,28 @@ Write a new version that will log the evaluation steps to a logger implicitly pa
 def evalTracing(e: Expr, context: Map[Var, Int])(using logger: Logger): Int
 ```
 
-When reading a value, it should log `Read variable [name] = [value] from environment`. When applying an operation, it should log `Applying operation [name] to arguments [args]`, where `[args]` is comma-separated list of the results of the evaluated arguments.
+When reading a value, it should log `Get var [name] = [value] from the context`. When applying an operation, it should log `Apply operation [name] to arguments [args]`, where `[args]` is a comma-separated list of evaluated arguments.
+
+
+Example run:
+
+```scala
+given logger: LoggerBuffered = LoggerBuffered()
+
+evalTracing(
+    Op("*", List(Var("x"), Op("+", List(Var("y"), Var("z"))))),
+    Map(Var("x") -> 2, Var("y") -> 3, Var("z") -> 4)
+)
+
+logger.getOutput()
+```
+
+Should output:
+
+```
+Get var x = 2 from the context.\n
+Get var y = 3 from the context.\n
+Get var z = 4 from the context.\n
+Apply operation + to arguments 3, 4
+Apply operation * to arguments 2, 7
+```
