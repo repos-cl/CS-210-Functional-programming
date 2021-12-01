@@ -80,9 +80,9 @@ logger.getOutput()
 Should output:
 
 ```
-Get var x = 2 from the context.\n
-Get var y = 3 from the context.\n
-Get var z = 4 from the context.\n
+Get var x = 2 from the context.
+Get var y = 3 from the context.
+Get var z = 4 from the context.
 Apply operation + to arguments 3, 4
 Apply operation * to arguments 2, 7
 ```
