@@ -74,8 +74,9 @@ Exercises (aka recitation sessions) take place on Wednesdays from 13:15 to 15:00
 | **Midterm exam**                               | -                | 10.11.2021              | -                |
 | Exercise Session 7                             | 15.11.2021       | 17.11.2021              | 22.11.2021       |
 | Exercise Session 8                             | 22.11.2021       | 24.11.2021              | 29.11.2021       |
-| Exercise Session 9                             | 29.11.2021       | 01.12.2021 & 08.12.2021 | 13.12.2021       |
-| Exercise Session 10                            | 06.12.2021       | 08.12.2021 & 15.12.2021 | 20.12.2021       |
+| Exercise Session 9                             | 29.11.2021       | 01.12.2021              | 06.12.2021       |
+| Exercise Session 10                            | 06.12.2021       | 08.12.2021              | 13.12.2021       |
+| Exercise Session 11                            | 13.12.2021       | 15.12.2021              | 20.12.2021       |
 | **Final exam**                                 | -                | 22.12.2021              | -                |
 
 Exercises are pen and paper style questions that will prepare you for the final exam.

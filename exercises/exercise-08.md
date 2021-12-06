@@ -32,6 +32,7 @@ summon[Eq[Person]](using ...)
 ## Question 2
 
 In this exercise, we will use term inference to calculate types based on other types.
+
 First, we define `Nat`:
 
 ```scala
@@ -48,7 +49,8 @@ case class S[N <: Nat](pred: N) extends Nat
 `Nat` encodes natural numbers on the type level:
 
 ```scala
-S(S(Z)) : S[S[Z]]
+S(S(Z))
+// res0: S[S[Z]] = S(S(Z))
 ```
 
 The type `S[S[Z]]` represents the successor of the successor of zero: two.
@@ -62,7 +64,13 @@ def add1(n: Nat, m: Nat): Nat =
     case S(n1) => S(add1(n1, m))
 ```
 
-However, this definition has an issue: the result is imprecisely typed.
+However, this definition has an issue: the result is imprecisely typed:
+
+```scala
+add1(S(Z), S(Z))
+// res1: Nat = S(S(Z))
+```
+
 To fix this, we will define the `Sum[N, M, R]` type class.
 An instance of Sum represents evidence that `N + M = R`.
 With the appropriate given definitions, the compiler can infer an instance of `Sum[N, M, R]` such that `N + M = R`, for any pair of natural numbers `N` and `M`:
@@ -70,14 +78,14 @@ With the appropriate given definitions, the compiler can infer an instance of `S
 ```scala
 case class Sum[N <: Nat, M <: Nat, R <: Nat](result: R)
 
-given zero as Z = Z
-given succ[N <: Nat](using n: N) as S[N] = S(n)
+given zero: Z = Z
+given succ[N <: Nat](using n: N): S[N] = S(n)
 
-given sumZ[N <: Nat](using n: N) as Sum[Z, N, N] = Sum(n)
+given sumZ[N <: Nat](using n: N): Sum[Z, N, N] = Sum(n)
 
 given sumS[N <: Nat, M <: Nat, R <: Nat](
   using sum: Sum[N, M, R]
-) as Sum[S[N], M, S[R]] = Sum(S(sum.result))
+): Sum[S[N], M, S[R]] = Sum(S(sum.result))
 ```
 
 Note how the last two `given` definitions reflect the definition of the `add1` method: `sumZ` corresponds to the case for `Z + M`, and `sumS` corresponds to the case for `S[N] + M`.
@@ -92,10 +100,11 @@ def add[N <: Nat, M <: Nat, R <: Nat](n: N, m: M)(
 ): R = sum.result
 ```
 
-As an example, the result of adding `S[Z]` to `S[Z]` is `S[S[Z]]`:
+As an example, the result of adding `S(Z)` to `S(Z)` has type `S[S[Z]]`:
 
 ```scala
-sum(S(Z), S(Z)) : S[S[Z]]
+add(S(Z), S(Z))
+// res2: S[S[Z]] = S(S(Z))
 ```
 
 1. Write explicitly the `using` argument to `sum` (it may help to write all type parameters explicitly):
@@ -103,10 +112,6 @@ sum(S(Z), S(Z)) : S[S[Z]]
 ```scala
 add(S(Z), S(S(Z)))(using ...)
 ```
-
-*Note:* If you try this in the Scala 3 compiler right now, the result won't be correct,
-this is a known compiler bug: https://github.com/lampepfl/dotty/issues/7586
-
 
 2. Write `given` definitions that create an instance of the
 `Product[N, M, R]` type class, representing the evidence that `N * M = R`.
@@ -121,7 +126,7 @@ Hint 1: Multiplying two natural numbers is defined as follows:
 def mul1(n: Nat, m: Nat): Nat =
   n match
     case Z => Z
-    case S(n1) => add(m, mul1(n1, m))
+    case S(n1) => add1(m, mul1(n1, m))
 ```
 
 Hint 2: The `R` type parameter is key to making the `add` definition work.

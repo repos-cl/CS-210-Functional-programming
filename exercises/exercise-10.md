@@ -1,61 +1,135 @@
 # Exercise Session 10
 
-In these exercises, you are asked to write higher-order functions in the simple untyped language supported by the interpreter for recursive higher-order functions that we developed in the lectures.
-
 ## Question 1
 
-In this exercise, you will be working with _Church numerals_.
-Church numerals are a representation of natural numbers using only functions.
-In this encoding, a number `n` is represented by a function that maps any function `f` to its `n`-fold composition.
-For example, `0`, `1`, `2` and `3` are represented as follows:
+For this exercise, you are given the following ASTs representing an expression `Expr`
 
 ```scala
-def zero   = (f => x => x)
-def one    = (f => x => f x)
-def two    = (f => x => f (f x))
-def three  = (f => x => f (f (f x)))
+enum BinOpName:
+  case Minus
+  case Plus
+  case Times
+  case LessEq
+  case Modulo
+
+enum Expr:
+  case Constant(value: Int) // Numeric constants
+  case Name(name: String) // reference to a name
+  case BinOp(op: BinOpName, arg1: Expr, arg2: Expr) // primitive binary operation
+  case IfNonzero(cond: Expr, caseTrue: Expr, caseFalse: Expr) // conditional
+  case Call(function: Expr, arg: Expr) // function call
+  case Fun(param: String, body: Expr) // function definition // function definition
+
+import BinOpName._
+import Expr._
 ```
 
-Give an implementation of the `succ` function that takes a Church numeral and returns its successor.
-For example, `(succ zero)` evaluates to the definition of `one` and `(succ one)` evaluates to the definition of `two`.
+We also provide a few valid primitive operations that you may use
+
+```scala
+def minus(e1: Expr, e2: Expr) = BinOp(Minus, e1, e2)
+def plus(e1: Expr, e2: Expr) = BinOp(Plus, e1, e2)
+def leq(e1: Expr, e2: Expr) = BinOp(LessEq, e1, e2) // 1 if e1 <= e2; 0 otherwise // 1 if e1 <= e2; 0 otherwise
+def times(e1: Expr, e2: Expr) = BinOp(Times, e1, e2)
+def modulo(e1: Expr, e2: Expr) = BinOp(Modulo, e1, e2)
+```
+
+The global environment is a sequence of `"name"  -> definition` tuples (of type `(String, Expr)`).
+All definitions can reference all names in the global environment.
+
+Where for example one could define a division function `div` as follows:
+
+```scala
+"div" -> Fun("x", Fun("y",
+  IfNonzero(BinOp(LessEq, Name("y"), Name("x")),
+    plus(Constant(1),
+      Call(Call(Name("div"), minus(Name("x"), Name("y"))),
+      Name("y"))),
+    Constant(0))))
+```
+
+
+Your task is to implement the greatest common divisor (`gcd`) function in `Expr`.
+
+```scala
+"gcd" -> ??? // TODO implement me
+```
+
+Hint: in Scala the `gcd` can be implemented as
+```scala
+def gcd(a: Int, b: Int): Int = if b == 0 then a else gcd(b, a%b)
+```
 
 ## Question 2
 
-Give an implementation of the `add` function that takes two Church numerals and returns their sum, using `succ`.
+For this exercise, we will add lists to our language
+
+```scala
+enum Expr:
+  ...
+  case Cons(head: Expr, tail: Expr) // Cons list
+  case EmptyList // empty of a Cons list
+  // matches a list
+  case Match(scrutinee: Expr, caseEmpty: Expr, headName: String, tailName: String, caseCons: Expr)
+```
+
+For example, the following program a match in Scala would translate as
+
+```scala
+ls match
+  case Nil => Nil
+  case x :: xs => x :: xs
+// becomes
+Match(Name("ls"),
+  EmptyList,
+  "x", "xs", Cons(Name("x"), Name("xs"))
+)
+```
+
+
+### Map
+Your task is to implement the `map` function in `Expr`.
+
+Hint:
+```scala
+def map(ls: List[Int])(f: Int => Int): List[Int] = ls match
+  case Nil => Nil
+  case x :: xs => f(x) :: map(xs)(f)
+```
+
+
+### Fold Left
+Your task is to implement the `foldLeft` function in `Expr`.
+Hint:
+```scala
+def foldLeft(ls: List[Int])(acc: Int)(f: (Int, Int) => Int): Int = ls match
+  case Nil => acc
+  case x :: xs => foldLeft(xs)(f(acc, x))(f)
+```
 
 ## Question 3
 
-In this exercise, you will be working with _Church-encoded lists_.
-Much like Church numerals, Church-encoded lists are a representation of lists using only functions.
-In this encoding, a list is represented by a function that takes two arguments and
-returns the first one if the list is empty
-or returns the second one applied to head and tail if the list is non-empty:
-
+For this exercise, we will add writable cells to our language. Assume we have a global array of memory that can be accessed by index.
 ```scala
-def nil  = (n => c => n)
-def cons = (h => t =>
-              n => c => c h t)
+enum Expr:
+  ...
+  // read from position `idx`
+  case Read(idx: Expr)
+  // write the `value` to position `idx` and then evaluates and return the `andThen` expression
+  case Write(idx: Expr, value: Expr, andThen: Expr)
+end Expr
 ```
 
-For example, `List(1,2,3)` would be represented in this encoding as follows:
 
+Your task is to implement the `CAS` (compare and swap) function in `Expr`.
+
+Hint:
 ```scala
-(cons 1 (cons 2 (cons 3 nil)))
+val mem: Array[Int] = ???
+def CAS(idx: Int)(old: Int)(nw: Int): Int =
+  if mem(idx) != old then
+    0
+  else
+    mem(idx) = nw
+    1
 ```
-
-With Church-encoded lists, decomposition is achieved by "applying" the list to a pair of continuations, one for the empty case and another one for the non-empty case. For example, concatenation of two Church-encoded lists could be implemented as follows:
-
-```scala
-def cat = (l1 => l2 =>
-             (l1 l2 (h => t => (cons h (cat t l2))))
-```
-
-Give an implementation of the `size` function that takes a Church-encoded list and returns its size as a Church numeral. You are allowed to use the `succ` function defined earlier.
-
-## Question 4
-
-Give an implementation of the `map` function which takes a Church-encoded list and a function and returns the list mapped with the function (in the sense of `List.map`). You may use recursion in your definitions.
-
-## Question 5
-
-Give an implementation of the `foldRight` function which takes a Church-encoded list and a function and returns the result of `foldRight`. You may use recursion in your definitions.
