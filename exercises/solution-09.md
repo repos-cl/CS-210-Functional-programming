@@ -5,7 +5,7 @@
 ```scala
 def groupBy[T, S](f: T => S)(xs: List[T]): Map[S, List[T]] =
     var result = Map[S, List[T]]()
-    xs.foreach(el =>
+    xs.reverse.foreach(el =>
         val key = f(el)
         val prevValue = result.getOrElse(key, List())
         result = result.updated(key, el :: prevValue)
@@ -15,11 +15,22 @@ def groupBy[T, S](f: T => S)(xs: List[T]): Map[S, List[T]] =
 
 ```scala
 def groupBy2[T, S](f: T => S)(xs: List[T]): Map[S, List[T]] =
-    xs.foldLeft(Map[S, List[T]]())((acc: Map[S, List[T]], el: T) =>
+    xs.foldRight(Map[S, List[T]]())((el: T, acc: Map[S, List[T]]) =>
         val key = f(el)
         val prevValue = acc.getOrElse(key, List())
         acc.updated(key, el :: prevValue)
     )
+```
+
+Example run:
+
+```scala
+groupBy[Int, Int](_ % 3)((0 to 10).toList)
+// res0: Map[Int, List[Int]] = Map(
+//   1 -> List(1, 4, 7, 10),
+//   0 -> List(0, 3, 6, 9),
+//   2 -> List(2, 5, 8)
+// )
 ```
 
 ## Question 2

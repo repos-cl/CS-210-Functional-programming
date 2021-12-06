@@ -11,7 +11,7 @@ def groupBy[T, S](f: T => S)(xs: List[T]): Map[S, List[T]] = ???
 Write two versions:
 
 - One using a mutable `var` and a `foreach` loop.
-- One `foldLeft`.
+- One using `foldRight`.
 
 ## Question 2
 
