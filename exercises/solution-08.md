@@ -54,7 +54,6 @@ summon[Eq[Person]](using
     )
   )
 )
-// res0: EqPerson = repl.MdocSession$App$EqPerson@3638d6ec
 ```
 
 ## Question 2
@@ -68,7 +67,6 @@ add(S(Z), S(S(Z)))(using
     sumZ(using S(S(Z)))
   )
 )
-// res1: S[S[S[Z]]] = S(S(S(Z)))
 ```
 
 2. Similarly to `Sum`, write `given` definitions that create an instance of the

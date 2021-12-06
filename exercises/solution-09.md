@@ -24,7 +24,7 @@ def groupBy2[T, S](f: T => S)(xs: List[T]): Map[S, List[T]] =
 
 ## Question 2
 
-### Question 2.1
+### Question 2.1
 
 
 ```scala

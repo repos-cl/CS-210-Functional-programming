@@ -100,7 +100,7 @@ def add[N <: Nat, M <: Nat, R <: Nat](n: N, m: M)(
 ): R = sum.result
 ```
 
-As an example, the result of adding `S(Z)` to `S(Z)` has type `S[S[Z]]`:
+As an example, the result of adding `S(Z)` to `S(Z)` is now precisely typed as `S[S[Z]]`:
 
 ```scala
 add(S(Z), S(Z))
