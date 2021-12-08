@@ -4,13 +4,13 @@
 
 ```scala
 def groupBy[T, S](f: T => S)(xs: List[T]): Map[S, List[T]] =
-    var result = Map[S, List[T]]()
+    var acc = Map[S, List[T]]()
     xs.reverse.foreach(el =>
         val key = f(el)
-        val prevValue = result.getOrElse(key, List())
-        result = result.updated(key, el :: prevValue)
+        val prevValue = acc.getOrElse(key, List())
+        acc = acc.updated(key, el :: prevValue)
     )
-    result
+    acc
 ```
 
 ```scala
