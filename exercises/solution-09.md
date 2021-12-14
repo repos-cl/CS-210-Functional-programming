@@ -2,18 +2,18 @@
 
 ## Question 1
 
-```scala mdoc
+```scala
 def groupBy[T, S](f: T => S)(xs: List[T]): Map[S, List[T]] =
-    var result = Map[S, List[T]]()
+    var acc = Map[S, List[T]]()
     xs.reverse.foreach(el =>
         val key = f(el)
-        val prevValue = result.getOrElse(key, List())
-        result = result.updated(key, el :: prevValue)
+        val prevValue = acc.getOrElse(key, List())
+        acc = acc.updated(key, el :: prevValue)
     )
-    result
+    acc
 ```
 
-```scala mdoc
+```scala
 def groupBy2[T, S](f: T => S)(xs: List[T]): Map[S, List[T]] =
     xs.foldRight(Map[S, List[T]]())((el: T, acc: Map[S, List[T]]) =>
         val key = f(el)
@@ -24,20 +24,21 @@ def groupBy2[T, S](f: T => S)(xs: List[T]): Map[S, List[T]] =
 
 Example run:
 
-```scala mdoc
+```scala
 groupBy[Int, Int](_ % 3)((0 to 10).toList)
+// res0: Map[Int, List[Int]] = Map(
+//   1 -> List(1, 4, 7, 10),
+//   0 -> List(0, 3, 6, 9),
+//   2 -> List(2, 5, 8)
+// )
 ```
 
 ## Question 2
 
 ### Question 2.1
 
-```scala mdoc:invisible
-trait Logger:
-    def log(message: String): Unit
-```
 
-```scala mdoc
+```scala
 class LoggerBuffered extends Logger:
     private var output: String = ""
     def log(message: String): Unit = output = output + message + "\n"
@@ -46,25 +47,8 @@ class LoggerBuffered extends Logger:
 
 ### Question 2.2
 
-```scala mdoc:invisible
-enum Expr:
-  case Var(name: String)
-  case Op(name: String, args: List[Expr])
 
-import Expr._
-
-final case class UnknownVarException(name: String) extends Exception
-final case class UnknownOpException(name: String) extends Exception
-
-def eval(e: Expr, context: Map[Var, Int]): Int = e match 
-    case sym: Var if context.contains(sym) => context(sym)
-    case sym: Var => throw UnknownVarException(sym.name)
-    case Op("*", args) => args.map(eval(_, context)).foldLeft(1)(_ * _)
-    case Op("+", args) => args.map(eval(_, context)).foldLeft(0)(_ + _)
-    case Op(name, _) => throw UnknownOpException(name)
-```
-
-```scala mdoc
+```scala
 def evalTracing(e: Expr, context: Map[Var, Int])(using logger: Logger): Int = e match 
     case sym: Var if context.contains(sym) =>
         val value = context(sym)
