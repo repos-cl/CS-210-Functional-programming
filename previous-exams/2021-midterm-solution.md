@@ -45,55 +45,6 @@ val exTree1 = Node(
     ),
     intLeq
 )
-// exTree1: Node[Int] = Node(
-//   Node(
-//     Node(
-//       EmptyTree(repl.MdocSession$App$$Lambda$26768/0x0000000802a74000@96de2cb),
-//       1,
-//       EmptyTree(repl.MdocSession$App$$Lambda$26769/0x0000000802a745d0@7b8c0297),
-//       repl.MdocSession$App$$Lambda$26770/0x0000000802a74ba0@b9d9006
-//     ),
-//     2,
-//     Node(
-//       EmptyTree(repl.MdocSession$App$$Lambda$26771/0x0000000802a754c0@76af1792),
-//       3,
-//       EmptyTree(repl.MdocSession$App$$Lambda$26772/0x0000000802a68000@10b2d836),
-//       repl.MdocSession$App$$Lambda$26773/0x0000000802a685d0@bb1f80d
-//     ),
-//     repl.MdocSession$App$$Lambda$26774/0x0000000802a68ba0@6c4b54dd
-//   ),
-//   5,
-//   Node(
-//     Node(
-//       EmptyTree(repl.MdocSession$App$$Lambda$26775/0x0000000802a69170@6256cd41),
-//       7,
-//       EmptyTree(repl.MdocSession$App$$Lambda$26776/0x0000000802a69740@64a3da55),
-//       repl.MdocSession$App$$Lambda$26777/0x0000000802a4c000@60d6275c
-//     ),
-//     9,
-//     Node(
-//       Node(
-//         EmptyTree(
-//           repl.MdocSession$App$$Lambda$26778/0x0000000802a4c5d0@560d6a27
-//         ),
-//         10,
-//         EmptyTree(repl.MdocSession$App$$Lambda$26779/0x0000000802a4cba0@2e58962),
-//         repl.MdocSession$App$$Lambda$26780/0x0000000802a4d170@786e8a19
-//       ),
-//       15,
-//       Node(
-//         EmptyTree(
-//           repl.MdocSession$App$$Lambda$26781/0x0000000802a4d740@29d3be8f
-//         ),
-//         25,
-//         EmptyTree(
-//           repl.MdocSession$App$$Lambda$26782/0x00000008023d8000@1432a5c0
-//         ),
-//         repl.MdocSession$App$$Lambda$26783/0x00000008023d85d0@3ab290bd
-//       ),
-//       repl.MdocSession$App$$Lambda$26784/0x00000008023d8ba0@3600ebb0
-//     ),
-// ...
 
 val exTree2 = Node(
     Node(
@@ -116,54 +67,6 @@ val exTree2 = Node(
     ),
     intLeq
 )
-// exTree2: Node[Int] = Node(
-//   Node(
-//     Node(
-//       Node(
-//         EmptyTree(repl.MdocSession$App$$Lambda$26787/0x0000000802af2000@38eb51e),
-//         25,
-//         EmptyTree(
-//           repl.MdocSession$App$$Lambda$26788/0x0000000802af25d0@2d17faaa
-//         ),
-//         repl.MdocSession$App$$Lambda$26789/0x0000000802af2ba0@1cfbd9d3
-//       ),
-//       15,
-//       Node(
-//         EmptyTree(repl.MdocSession$App$$Lambda$26790/0x0000000802af3170@613fca1),
-//         10,
-//         EmptyTree(
-//           repl.MdocSession$App$$Lambda$26791/0x0000000802af3740@70439f38
-//         ),
-//         repl.MdocSession$App$$Lambda$26792/0x0000000802a4e000@6293f930
-//       ),
-//       repl.MdocSession$App$$Lambda$26793/0x0000000802a4e5d0@206481f0
-//     ),
-//     9,
-//     Node(
-//       EmptyTree(repl.MdocSession$App$$Lambda$26794/0x00000008023da000@390b97a9),
-//       7,
-//       EmptyTree(repl.MdocSession$App$$Lambda$26795/0x00000008023da5d0@55dd75ef),
-//       repl.MdocSession$App$$Lambda$26796/0x0000000802af1000@287a5c1d
-//     ),
-//     repl.MdocSession$App$$Lambda$26797/0x0000000802af15d0@2c9523e3
-//   ),
-//   5,
-//   Node(
-//     Node(
-//       EmptyTree(repl.MdocSession$App$$Lambda$26798/0x0000000802b50000@49464f07),
-//       3,
-//       EmptyTree(repl.MdocSession$App$$Lambda$26799/0x0000000802b505d0@778a39cd),
-//       repl.MdocSession$App$$Lambda$26800/0x0000000802b50ba0@d6a0995
-//     ),
-//     2,
-//     Node(
-//       EmptyTree(repl.MdocSession$App$$Lambda$26801/0x0000000802b51170@865a9e0),
-//       1,
-//       EmptyTree(repl.MdocSession$App$$Lambda$26802/0x0000000802b51740@7320e19c),
-//       repl.MdocSession$App$$Lambda$26803/0x0000000802b51d10@55c2fa64
-//     ),
-//     repl.MdocSession$App$$Lambda$26804/0x0000000802b522e0@83967e8
-// ...
 
 val tree3 = Node(
     Node(
@@ -181,45 +84,6 @@ val tree3 = Node(
     EmptyTree(intLeq),
     intLeq
 )
-// tree3: Node[Int] = Node(
-//   Node(
-//     Node(
-//       Node(
-//         EmptyTree(
-//           repl.MdocSession$App$$Lambda$26806/0x0000000802b52e80@2d36e5a6
-//         ),
-//         25,
-//         EmptyTree(
-//           repl.MdocSession$App$$Lambda$26807/0x0000000802b53450@596ecd9d
-//         ),
-//         repl.MdocSession$App$$Lambda$26808/0x0000000802b53a20@1bbd0d0e
-//       ),
-//       15,
-//       Node(
-//         EmptyTree(
-//           repl.MdocSession$App$$Lambda$26809/0x0000000802b53ff0@58783fb6
-//         ),
-//         10,
-//         EmptyTree(
-//           repl.MdocSession$App$$Lambda$26810/0x0000000802b545c0@42f9faca
-//         ),
-//         repl.MdocSession$App$$Lambda$26811/0x0000000802b54b90@6dd4c52d
-//       ),
-//       repl.MdocSession$App$$Lambda$26812/0x0000000802b55160@1e7270e4
-//     ),
-//     9,
-//     Node(
-//       EmptyTree(repl.MdocSession$App$$Lambda$26813/0x0000000802b55730@76e6913),
-//       7,
-//       EmptyTree(repl.MdocSession$App$$Lambda$26814/0x0000000802b55d00@a4cec9e),
-//       repl.MdocSession$App$$Lambda$26815/0x0000000802b562d0@41fabd57
-//     ),
-//     repl.MdocSession$App$$Lambda$26816/0x0000000802b568a0@4c0210dc
-//   ),
-//   5,
-//   EmptyTree(repl.MdocSession$App$$Lambda$26817/0x0000000802b56e70@3850cebe),
-//   repl.MdocSession$App$$Lambda$26818/0x0000000802b57440@5515fd36
-// )
 
 assert(exTree1.height == 4)
 assert(exTree2.height == 4)
