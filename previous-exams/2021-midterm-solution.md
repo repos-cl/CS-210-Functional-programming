@@ -130,6 +130,10 @@ def eval2(e: Expr, context: Map[Var, Int]): Int = e match
     case Op(name, _) => throw UnknownOpException(name)
 ```
 
+**Comments**
+- A lot of you assumed that the arguments of `Op`s can only be `Var`s, but these can be `Op`s as well as in `Op("*", List(Op("+", List(Var("x"), Var("x"))), Var("y")))`, so the function needs to call itself _recursively_ for each operation argument.
+- Minor: `Map[Var, Int]` maps `Var` to `Int`s, so the argument passed to `context.get` must be a `Var`, not a `String`.
+
 <details>
 
 <summary>Tests</summary>
