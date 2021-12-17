@@ -156,7 +156,7 @@ for eval <- Seq(eval1, eval2) do
 ### Exercise 3.1
 
 - Type parameter `A` in `map`
-- `def map[B >: A](f: B => C): Transform[B, C]`
+- `def map[C](f: B => C): Transform[B, C]`
 
 ### Exercise 3.2
 
