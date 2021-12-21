@@ -15,15 +15,26 @@ trait Eq[T]:
     def === (y: T): Boolean
 ```
 
-1. Write a `given` instance to create `Eq[List[T]]` from a `Eq[T]`.
-2. Write a `given` instance to create `Eq[(T, U, S)]` from `Eq[T]`, `Eq[U]` and `Eq[S]`.
-3. Write `given` instance to create `Eq[Person]`. Make use of both the definitions you have written previously.
+### Question 1.1
+
+Write a `given` instance to create `Eq[List[T]]` from a `Eq[T]`.
+
+
+### Question 1.2
+
+Write a `given` instance to create `Eq[(T, U, S)]` from `Eq[T]`, `Eq[U]` and `Eq[S]`.
+
+### Question 1.3
+
+Write `given` instance to create `Eq[Person]`. Make use of both the definitions you have written previously.
 
 ```scala
 case class Person(name: String, age: Int, neighbours: List[String])
 ```
 
-4. Explicitly write the `using` argument to `summon` (you may need to assign names to your `given` definitions):
+### Question 1.4
+
+Explicitly write the `using` argument to `summon` (you may need to assign names to your `given` definitions):
 
 ```scala
 summon[Eq[Person]](using ...)
@@ -71,8 +82,8 @@ add1(S(Z), S(Z))
 // res1: Nat = S(S(Z))
 ```
 
-To fix this, we will define the `Sum[N, M, R]` type class.
-An instance of Sum represents evidence that `N + M = R`.
+To fix this, we will define the `Sum[N, M, R]` type class. An instance of Sum represents evidence that `N + M = R`.
+
 With the appropriate given definitions, the compiler can infer an instance of `Sum[N, M, R]` such that `N + M = R`, for any pair of natural numbers `N` and `M`:
 
 ```scala
@@ -88,8 +99,7 @@ given sumS[N <: Nat, M <: Nat, R <: Nat](
 ): Sum[S[N], M, S[R]] = Sum(S(sum.result))
 ```
 
-Note how the last two `given` definitions reflect the definition of the `add1` method: `sumZ` corresponds to the case for `Z + M`, and `sumS` corresponds to the case for `S[N] + M`.
-The second case is recursive, explicitly for `add1` and using term inference for the `given` definition.
+Note how the last two `given` definitions reflect the definition of the `add1` method: `sumZ` corresponds to the case for `Z + M`, and `sumS` corresponds to the case for `S[N] + M`. The second case is recursive, explicitly for `add1` and using term inference for the `given` definition.
 
 Using the above definitions, we can write a function that adds two `Nat`
 values and assigns a precise type to the result:
@@ -107,13 +117,20 @@ add(S(Z), S(Z))
 // res2: S[S[Z]] = S(S(Z))
 ```
 
-1. Write explicitly the `using` argument to `sum` (it may help to write all type parameters explicitly):
+### Question 2.1
+
+Write explicitly the `using` argument to `sum` (it may help to write all type parameters explicitly):
 
 ```scala
 add(S(Z), S(S(Z)))(using ...)
 ```
 
-2. Write `given` definitions that create an instance of the
+*Note:* If you try this in the Scala 3 compiler right now, the result won't be correct,
+this is a known compiler bug: https://github.com/lampepfl/dotty/issues/7586.
+
+### Question 2.2
+
+Write `given` definitions that create an instance of the
 `Product[N, M, R]` type class, representing the evidence that `N * M = R`.
 
 ```scala

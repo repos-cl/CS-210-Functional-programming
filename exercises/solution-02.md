@@ -83,12 +83,22 @@ def fixedPointCurry(f: Int => Int)(guess: Int): Int =
 
 ### Question 5.1
 
+As seen in [the slides](https://gitlab.epfl.ch/lamp/cs210/-/blob/master/slides/progfun1-2-2.pdf):
+
 ```scala
-def sum(a: Int, b: Int)(f: Int => Int): Int =
+def sum(f: Int => Int)(a: Int, b: Int): Int =
+  if a > b then 0 else f(a) + sum(f)(a + 1, b)
+```
+
+Tail-recursive version:
+
+```scala
+import scala.annotation.tailrec
+
+def sumTailRec(f: Int => Int)(a: Int, b: Int): Int =
   @tailrec
   def loop(i: Int, acc: Int): Int =
-    if i > b then acc
-    else loop(i + 1, acc + f(i))
+    if i > b then acc else loop(i + 1, acc + f(i))
   
   loop(a, 0)
 ```
@@ -103,6 +113,6 @@ def quadratic(c: Int): Int => Int =
 ### Question 5.3
 
 ```scala
-def quad3Integrate(a: Int, b: Int): Int =
-  sum(a, b - 1)(quadratic(3))
+val quad3Integrate: (Int, Int) => Int =
+  sum(quadratic(3))
 ```

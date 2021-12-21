@@ -156,7 +156,19 @@ for eval <- Seq(eval1, eval2) do
 ### Exercise 3.1
 
 - Type parameter `A` in `map`
-- `def map[C](f: B => C): Transform[A, C]`
+- `def map[B >: A](f: B => C): Transform[A, C]`
+
+    <details>
+    <summary>Full code</summary>
+
+    ```scala mdoc
+    trait Transform[-A, +B]:
+        def apply(x: A): B
+        def map[C](f: B => C): Transform[A, C]
+        def followedBy[C](t: Transform[B, C]): Transform[A, C]
+    ```
+
+    </details>
 
 ### Exercise 3.2
 

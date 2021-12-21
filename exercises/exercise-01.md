@@ -50,7 +50,7 @@ def fastExp(base: Int, exp: Int): Int = ???
 Define a function that computes the nth Fibonacci number. Can you define a tail recursive version as well? The Fibonacci recurrence is given as follows:
 
 ```
-fib(n) = 1 | n = 0, 1
+fib(n) = n | n = 0, 1
 fib(n) = fib(n - 1) + fib(n - 2) | otherwise
 ```
 

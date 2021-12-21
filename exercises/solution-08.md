@@ -3,7 +3,7 @@
 ## Question 1
 
 
-1. Write a `given` definition to create `Eq[List[T]]` from a `Eq[T]`.
+### Question 1.1
 
 ```scala
 given EqList[T](using Eq[T]): Eq[List[T]] with
@@ -15,7 +15,7 @@ given EqList[T](using Eq[T]): Eq[List[T]] with
         case _ => false
 ```
 
-2. Write a `given` definition to create `Eq[(T, U, S)]` from `Eq[T]`, `Eq[U]` and `Eq[S]`.
+### Question 1.2
 
 ```scala
 given EqTriple[T, U, S](using Eq[T], Eq[U], Eq[S]): Eq[(T, U, S)] with
@@ -24,7 +24,7 @@ given EqTriple[T, U, S](using Eq[T], Eq[U], Eq[S]): Eq[(T, U, S)] with
       x._1 === y._1 && x._2 === y._2 && x._3 === y._3
 ```
 
-3. Write `given` definitions to create `Eq[Person]`. Make use of both the definitions you have written previously.
+### Question 1.3
 
 
 ```scala
@@ -42,7 +42,7 @@ given EqPerson(using Eq[(String, Int, List[String])]): Eq[Person] with
       (a.name, a.age, a.neighbours) === (b.name, b.age, b.neighbours)
 ```
 
-4. Explicitly write the `given` argument to `summon` (you may need to assign names to your `given` definitions):
+### Question 1.4
 
 ```scala
 summon[Eq[Person]](using
@@ -59,18 +59,28 @@ summon[Eq[Person]](using
 ## Question 2
 
 
-1. Write explicitly the `given` argument to `add` (it may help to write all type parameters explicitly):
+### Question 2.1
 
 ```scala
 add(S(Z), S(S(Z)))(using
   sumS(using
-    sumZ(using S(S(Z)))
+    sumZ(using
+      succ(using
+        succ(using
+            zero
+        )
+      )
+    )
   )
 )
+// res1: S[S[S[Z]]] = S(S(S(Z)))
 ```
 
-2. Similarly to `Sum`, write `given` definitions that create an instance of the
-`Product[N, M, R]` type-class, representing the evidence that `N * M = R`.
+*Note:* If you try to just write `add(S(Z), S(S(Z)))` without explictly specifying the implicit parameters in the Scala 3 compiler right now, you well get the wrong result. This is a known compiler bug: https://github.com/lampepfl/dotty/issues/7586.
+
+
+
+### Question 2.2
 
 ```scala
 given [N <: Nat]: Prod[Z, N, Z] = Prod(Z)
