@@ -53,7 +53,13 @@ cd %USERPROFILE%
 Now assuming that you're in the correct directory you can run:
 
 ```shell
-bitsadmin /transfer cs-cli  https://github.com/coursier/launchers/raw/master/cs-x86_64-pc-win32.zip "%cd%\cs.exe"
+bitsadmin /transfer cs-cli  https://github.com/coursier/launchers/raw/master/cs-x86_64-pc-win32.zip "%cd%\cs.zip"
+```
+```shell
+tar -xf cs.zip
+```
+```shell
+move cs-x86_64-pc-win32.exe cs.exe
 ```
 ```shell
 .\cs setup -y --jvm 8 --apps cs,sbt
