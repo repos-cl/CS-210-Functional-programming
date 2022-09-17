@@ -47,6 +47,3 @@ grade:
   before_script:
     - mkdir -p /shared/submission/
     - cp submission.jar /shared/submission/submission.jar
-  script:
-    - cd /grader
-    - env -i bash --noprofile --norc -c "/grader/grade ch.epfl.lamp.grading.CourseraGrading /shared"
