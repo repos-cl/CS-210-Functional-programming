@@ -12,9 +12,6 @@ stages:
   - build
   - grade
 
-variables:
-  OUTPUT_DIR: "-"
-
 compile:
   stage: build
   timeout: 10m
