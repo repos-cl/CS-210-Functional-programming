@@ -23,7 +23,7 @@ compile:
     - cs210
   except:
     - tags
-    - master
+    - main
   script:
     - sbt packageSubmission
   # Output of this job that needs to be stored to be reused in the grade job below
@@ -42,11 +42,7 @@ grade:
     - cs210
   image:
     name: ${DOCKER_REPO}/grader-${CI_COMMIT_BRANCH}
-    entrypoint: [""]
   allow_failure: true
   before_script:
     - mkdir -p /shared/submission/
     - cp submission.jar /shared/submission/submission.jar
-  script:
-    - cd /grader
-    - env -i bash --noprofile --norc -c "/grader/grade ch.epfl.lamp.grading.CourseraGrading /shared"
