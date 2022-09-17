@@ -28,7 +28,7 @@ compile:
     - sbt packageSubmission
   # Output of this job that needs to be stored to be reused in the grade job below
   artifacts:
-    expire_in: 20m
+    expire_in: 24h
     paths:
       - submission.jar
 
@@ -42,4 +42,4 @@ grade:
     - cs210
   image: ${DOCKER_REPO}/grader-${CI_COMMIT_BRANCH}
   allow_failure: true
-  script: "foo"
+  script: "😎"
