@@ -43,7 +43,4 @@ grade:
   image:
     name: ${DOCKER_REPO}/grader-${CI_COMMIT_BRANCH}
   allow_failure: true
-  before_script:
-    - mkdir -p /shared/submission/
-    - cp submission.jar /shared/submission/submission.jar
-  script: ""
+  script: "foo"
