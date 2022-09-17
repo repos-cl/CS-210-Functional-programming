@@ -26,13 +26,11 @@ compile:
     - main
   script:
     - sbt packageSubmission
-    - mkdir -p /shared/submission
-    - mv submission.jar /shared/submission/submission.jar
   # Output of this job that needs to be stored to be reused in the grade job below
   artifacts:
     expire_in: 20m
     paths:
-      - ../../../../shared/submission/submission.jar
+      - submission.jar
 
 grade:
   stage: grade
