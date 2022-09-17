@@ -26,11 +26,13 @@ compile:
     - main
   script:
     - sbt packageSubmission
+    - mkdir -p /shared/submission
+    - mv submission.jar /shared/submission/submission.jar
   # Output of this job that needs to be stored to be reused in the grade job below
   artifacts:
     expire_in: 20m
     paths:
-      - submission.jar
+      - /shared/submission/submission.jar
 
 grade:
   stage: grade
@@ -40,7 +42,6 @@ grade:
     - main
   tags:
     - cs210
-  image:
-    name: ${DOCKER_REPO}/grader-${CI_COMMIT_BRANCH}
+  image: ${DOCKER_REPO}/grader-${CI_COMMIT_BRANCH}
   allow_failure: true
   script: "foo"
