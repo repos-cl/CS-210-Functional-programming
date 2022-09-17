@@ -37,6 +37,8 @@ grade:
     - main
   tags:
     - cs210
+  variables:
+    JAR_PATH: "${CI_PROJECT_DIR}/submission.jar"
   image: ${DOCKER_REPO}/grader-${CI_COMMIT_BRANCH}
   allow_failure: true
   script: "😎"
