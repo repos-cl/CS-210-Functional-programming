@@ -42,4 +42,6 @@ grade:
     - cs210
   image: ${DOCKER_REPO}/grader-${CI_COMMIT_BRANCH}
   allow_failure: true
+  before_script:
+    - cp submission.jar /shared/submission/submission.jar
   script: "😎"
