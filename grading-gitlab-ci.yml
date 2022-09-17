@@ -37,7 +37,7 @@ grade:
   timeout: 10m
   except:
     - tags
-    - master
+    - main
   tags:
     - cs210
   image:
