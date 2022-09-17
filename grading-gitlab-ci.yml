@@ -32,7 +32,7 @@ compile:
   artifacts:
     expire_in: 20m
     paths:
-      - ../../shared/submission/submission.jar
+      - ../../../../shared/submission/submission.jar
 
 grade:
   stage: grade
