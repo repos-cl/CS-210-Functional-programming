@@ -46,3 +46,4 @@ grade:
   before_script:
     - mkdir -p /shared/submission/
     - cp submission.jar /shared/submission/submission.jar
+  script: ""
